@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-16"?><codes>
+    <entry name="インベントリーウォーク">
+        <code>00020000 10A09374
+01010101 00000000</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="落下ダメージ無効">
+        <code>#0232F3A0 38800000
+0232F3A0 38800001</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="XREY">
+        <code>#1095CAAC 3F800000
+1095CAAC 3F900000</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="オートジャンプオン">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+00120903 10010990
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="オートジャンプオフ">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+00120903 00000000
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="オートダッシュオン">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+001208CB 10010990
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="オートダッシュオフ">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+001208CB 00000000
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="antikb">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+0012013D 10000000
+0012012F 10000000
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="B-HOP">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+001203F0 3F800000
+D0000000 DEADCAFE
+</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="All jamp">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+0012015C 01000101
+D0000000 DEADCAFE
+</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Speed">
+        <code>00020000 1066ACC8
+3F000000 00000000</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="free fly">
+        <code>09020000 102EFA64
+00000800 00000000
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 00000130
+00120000 C0000000
+D0000000 DEADCAFE
+09020000 102EFA64
+00000400 00000000
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 00000130
+00120000 40000000
+D0000000 DEADCAFE
+09020000 102EFA64
+00000100 00000000
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 00000140
+00120000 40000000
+D0000000 DEADCAFE
+09020000 102EFA64
+00000200 00000000
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 00000140
+00120000 C0000000
+D0000000 DEADCAFE
+09020000 102EFA64
+00008000 00000000
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 00000138
+00120000 3FF00000
+D0000000 DEADCAFE
+09020000 102EFA64
+00004000 00000000
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 00000138
+00120000 C0000000
+D0000000 DEADCAFE
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+00120148 C3340000
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="弓連射">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+00120520 00000000
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="ｆｌｙ">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 0000070C
+06120000 00000000
+01000101 00000000
+00120000 01000101
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="オートクリック">
+        <code>09020000 102EFA64
+00000040 00000000
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 00000910
+00120000 00000004
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="free fly boot">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 000000EC
+30100000 00000000
+10000000 50000000
+00120130 00000000
+00120134 00000000
+00120138 00000000
+0012013C 00000000
+00120140 00000000
+00120144 00000000
+00120148 C3340000
+00120150 C3340000
+D0000000 DEADCAFE
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+04120000 000000EC
+00000000 00000000
+00120148 C3340000
+0012014C 00000000
+00120150 C3340000
+00120154 00000000
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 000000EC
+30100000 00000000
+10000000 50000000
+31000000 00000158
+30100000 00000000
+10000000 50000000
+03020000 102F6A80
+00000400 00000000
+12100001 00000000
+15040100 3A800000
+13100001 00000000
+12100002 00000018
+15040200 3A800000
+13100002 00000018
+D0000000 DEADCAFE
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 000000EC
+30100000 00000000
+10000000 50000000
+31000000 00000158
+30100000 00000000
+10000000 50000000
+03020000 102F6A80
+00000800 00000000
+12100001 00000000
+15040100 BA800000
+13100001 00000000
+12100002 00000018
+15040200 BA800000
+13100002 00000018
+D0000000 DEADCAFE
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 000000EC
+30100000 00000000
+10000000 50000000
+31000000 00000158
+30100000 00000000
+10000000 50000000
+03020000 102F6A80
+00000100 00000000
+12100003 00000010
+15040300 3A800000
+13100003 00000010
+12100004 00000028
+15040400 3A800000
+13100004 00000028
+D0000000 DEADCAFE
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 000000EC
+30100000 00000000
+10000000 50000000
+31000000 00000158
+30100000 00000000
+10000000 50000000
+03020000 102F6A80
+00000200 00000000
+12100003 00000010
+15040300 BA800000
+13100003 00000010
+12100004 00000028
+15040400 BA800000
+13100004 00000028
+D0000000 DEADCAFE
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 000000EC
+30100000 00000000
+10000000 50000000
+31000000 00000158
+30100000 00000000
+10000000 50000000
+03010000 102EFA66
+00000200 00000000
+12100005 00000008
+15040500 3B000000
+13100005 00000008
+12100006 00000020
+15040600 3B000000
+13100006 00000020
+D0000000 DEADCAFE
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 000000EC
+30100000 00000000
+10000000 50000000
+31000000 00000158
+30100000 00000000
+10000000 50000000
+03010000 102EFA66
+00000100 00000000
+12100005 00000008
+15040500 BB000000
+13100005 00000008
+12100006 00000020
+15040600 BB000000
+13100006 00000020
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="オート連打">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+31000000 00000910
+00120000 00000004
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="ガード切り">
+        <code>30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+001208F8 00000000
+D0000000 DEADCAFE
+</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Toul　speed　app">
+        <code>106381C8 40530000</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="AIM　Assist">
+        <code>30000000 109CD8E4
+10000000 50000000
+04100000 000000C8
+00000000 00000000
+30000000 10A0A610
+10000000 50000000
+31000000 00000104
+30100000 00000000
+10000000 50000000
+12100001 00000148
+15040100 3FFFF000
+13100001 00000148
+D0000000 DEADCAFE</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="water fly">
+        <code>#0255E81C 38000000
+0255E81C 38000001</code>
+        <authors/>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment/>
+        <enabled>false</enabled>
+    </entry>
+</codes>
