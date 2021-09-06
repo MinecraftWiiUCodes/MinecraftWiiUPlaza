@@ -1,7 +1,7 @@
 # Trinity
 > by KeyZiro
 
-Yup, you read that right. I am extremely against selling cheat codes in any way, so hopefully this will be a nice lesson for you.
+Yup, you read that right. I absolutely hate anyone selling cheat codes in any way, so hopefully this will be a nice lesson for you.
 ###### ~~$10 is too fucking much by the way~~  
 These files are not cracked yet, however you are free to attempt to crack them yourself. The RPX's function names are obfuscated.
 
