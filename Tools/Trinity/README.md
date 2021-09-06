@@ -18,21 +18,21 @@ After the download is finished, SDL-Install__.rpx will be run, however the previ
 
 The RPX then requests the following URLs:
 
-> All of these requests must have these as the only headers: `Accept: */*`, and `Host: 51.91.56.16`
-> ---------------------------------------------------
-> http://51.91.56.16/online (content-type is `application/octet-stream`, returns `1\n`)
-> http://51.91.56.16/version (content-type is `application/octet-stream`, returns `v1.6\n`)
-> http://51.91.56.16/launcher/2vl_logo.png (content-type is `image/png`, Vulcan Logo)
-> http://51.91.56.16/launcher/2ph_logo.png (content-type is `image/png`, Phantom Logo)
-> http://51.91.56.16/launcher/2tr_logo.png (content-type is `image/png`, Trinity Logo)
-> ---------------------------------------------------
-> The following requests require this header to be included: `SID: 1234`
-> Otherwise, it will return with a simple "YA BITCH". He knew LOL
-> http://51.91.56.16/stats.php?type=website (content-type is `text/html; charset=UTF-8`, returns `<br/>website`)
-> http://51.91.56.16/stats.php?type=trinity (content-type is `text/html; charset=UTF-8`, returns `<br/>trinity`)
-> ---------------------------------------------------
-> After pressing "Launch" on Trinity, the following file is downloaded and run (I'm still not too sure how the file is run, but disassembling the RPX could lead to clues):
-> http://51.91.56.16/adilmc.php (content-type is `application/octet-stream`, returns the adilmc file in the repository)
+> All of these requests must have these as the only headers: `Accept: */*`, and `Host: 51.91.56.16`  
+> ---------------------------------------------------  
+> http://51.91.56.16/online (content-type is `application/octet-stream`, returns `1\n`)  
+> http://51.91.56.16/version (content-type is `application/octet-stream`, returns `v1.6\n`)  
+> http://51.91.56.16/launcher/2vl_logo.png (content-type is `image/png`, Vulcan Logo)  
+> http://51.91.56.16/launcher/2ph_logo.png (content-type is `image/png`, Phantom Logo)  
+> http://51.91.56.16/launcher/2tr_logo.png (content-type is `image/png`, Trinity Logo)  
+> ---------------------------------------------------  
+> The following requests require this header to be included: `SID: 1234`  
+> Otherwise, it will return with a simple "YA BITCH". He knew LOL  
+> http://51.91.56.16/stats.php?type=website (content-type is `text/html; charset=UTF-8`, returns `<br/>website`)  
+> http://51.91.56.16/stats.php?type=trinity (content-type is `text/html; charset=UTF-8`, returns `<br/>trinity`)  
+> ---------------------------------------------------  
+> After pressing "Launch" on Trinity, the following file is downloaded and run (I'm still not too sure how the file is run, but disassembling the RPX could lead to clues):  
+> http://51.91.56.16/adilmc.php (content-type is `application/octet-stream`, returns the adilmc file in the repository)  
 
 Once Trinity has been launched, Minecraft: Wii U is automatically started up.
 
