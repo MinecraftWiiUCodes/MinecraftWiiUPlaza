@@ -36,6 +36,6 @@ The RPX then requests the following URLs:
 
 Once Trinity has been launched, Minecraft: Wii U is automatically started up.
 
-Interestingly, there's one more check while Minecraft is running, so that means the full version of Trinity is downloaded, not just the trial version. It just does a simple request to see if you bought it, and if you haven't, it displays a warning message on the bottom. (I am unaware of the url requested)
+Interestingly, there's one more check while Minecraft is running, so that means the full version of Trinity is downloaded, not just the trial version. It just does a simple request to see if you bought it, and if you haven't, it displays a warning message on the bottom. (I am unaware of the url requested, however it can likely be easily spoofed, the data sent is unclear however)
 
 So yeah, have fun with this.
