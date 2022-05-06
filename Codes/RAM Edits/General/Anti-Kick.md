@@ -1,4 +1,4 @@
-# Craft Everything
+# Anti-Kick
 > by: ??? (found in PureClient)
 
 Prevents you from ever being kicked, patches the ClientPacketListener::handleDisconnect function.
