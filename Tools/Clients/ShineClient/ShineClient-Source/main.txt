@@ -1,0 +1,8381 @@
+
+# これはソースコード
+# build.pyを実行することで
+# コードまたはelfにビルドできます
+
+# 多分ソースコードがぐちゃぐちゃすぎて...
+# 作った本人しかわからないと思う
+# いや、作った本人もあんまわからない
+
+lis r2,0x1600
+addi r2,r2,0x5000
+mflr r0
+stw r0,  4(r2)
+stw r20,-0x48(r2)
+stw r21,-0x44(r2)
+stw r22,-0x40(r2)
+stw r23,-0x3C(r2)
+stw r24,-0x38(r2)
+stw r25,-0x34(r2)
+stw r26,-0x30(r2)
+stw r27,-0x2C(r2)
+stw r28,-0x28(r2)
+stw r29,-0x24(r2)
+stw r30,-0x20(r2)
+stw r31,-0x1C(r2)
+
+lwz r12,0xA58(r2)
+addi r12,r12,1
+stw r12,0xA58(r2)
+
+lis r12,0x4100
+stw r12,-0x100(r2)
+
+lis r12,0x419A
+stw r12,-0xF8(r2)
+
+lis r20,0x102F
+lwz r20,-0x59C(r20)
+
+lis r12,0x4130
+stw r12,0x42C(r2)
+
+lis r12,0x423A
+stw r12,-0x428(r2)
+stw r12,-0x1B0(r2)
+
+lis r12,0x42F5
+stw r12,0x102C(r2)
+
+lis r12,0x423A
+stw r12,0x30(r2)
+
+lis r25,0x109D
+lwz r25,-0x271C(r25)
+
+lwz r9,-0x4A8(r2)
+cmpwi r9,0
+beq no22z
+lwz r12,0xC8(r25)
+cmpwi r12,0
+beq no22z
+stw r13,0x1F0(r2)
+stw r14,0x1F4(r2)
+stw r15,0x1F8(r2)
+stw r16,0x1FC(r2)
+stw r17,0x200(r2)
+stw r20,0x204(r2)
+stw r21,0x208(r2)
+stw r22,0x20C(r2)
+stw r23,0x210(r2)
+stw r24,0x214(r2)
+stw r25,0x218(r2)
+stw r26,0x21C(r2)
+stw r27,0x220(r2)
+stw r28,0x224(r2)
+lis r12,0x109E
+lwz r12,-0x7B4(r12)
+lwz r13,0x450(r12)
+lwz r14,0x46C(r12)
+lwz r15,0x440(r12)
+lwz r16,0x42C(r12)
+lwz r17,0x430(r12)
+lwz r12,0x34(r25)
+lwz r29,0x5F0(r12)
+lwz r10,0x6C(r29)
+lwz r12,0x8(r29)
+lwz r20,0x0(r12)
+lwz r20,0x10(r20)
+lwz r21,0x8(r12)
+lwz r21,0x10(r21)
+lwz r22,0x10(r12)
+lwz r22,0x10(r22)
+lwz r23,0x18(r12)
+lwz r23,0x10(r23)
+lwz r24,0x20(r12)
+lwz r24,0x10(r24)
+lwz r25,0x28(r12)
+lwz r25,0x10(r25)
+lwz r26,0x30(r12)
+lwz r26,0x10(r26)
+lwz r27,0x38(r12)
+lwz r27,0x10(r27)
+lwz r28,0x40(r12)
+lwz r28,0x10(r28)
+cmplw r13,r20
+beq zero
+cmplw r14,r20
+beq zero
+cmplw r15,r20
+beq zero
+cmplw r16,r20
+beq zero
+cmplw r17,r20
+beq zero
+cmplw r13,r21
+beq onea
+cmplw r14,r21
+beq onea
+cmplw r15,r21
+beq onea
+cmplw r16,r21
+beq onea
+cmplw r17,r21
+beq onea
+cmplw r13,r22
+beq twoa
+cmplw r14,r22
+beq twoa
+cmplw r15,r22
+beq twoa
+cmplw r16,r22
+beq twoa
+cmplw r17,r22
+beq twoa
+cmplw r13,r23
+beq thr
+cmplw r14,r23
+beq thr
+cmplw r15,r23
+beq thr
+cmplw r16,r23
+beq thr
+cmplw r17,r23
+beq thr
+cmplw r13,r24
+beq for
+cmplw r14,r24
+beq for
+cmplw r15,r24
+beq for
+cmplw r16,r24
+beq for
+cmplw r17,r24
+beq for
+cmplw r13,r25
+beq fiv
+cmplw r14,r25
+beq fiv
+cmplw r15,r25
+beq fiv
+cmplw r16,r25
+beq fiv
+cmplw r17,r25
+beq fiv
+cmplw r13,r26
+beq six
+cmplw r14,r26
+beq six
+cmplw r15,r26
+beq six
+cmplw r16,r26
+beq six
+cmplw r17,r26
+beq six
+cmplw r13,r27
+beq sev
+cmplw r14,r27
+beq sev
+cmplw r15,r27
+beq sev
+cmplw r16,r27
+beq sev
+cmplw r17,r27
+beq sev
+cmplw r13,r28
+beq eig
+cmplw r14,r28
+beq eig
+cmplw r15,r28
+beq eig
+cmplw r16,r28
+beq eig
+cmplw r17,r28
+beq eig
+b no_tekiopu
+zero:
+li r10,0
+b no_tekiopu
+onea:
+li r10,1
+b no_tekiopu
+twoa:
+li r10,2
+b no_tekiopu
+thr:
+li r10,3
+b no_tekiopu
+for:
+li r10,4
+b no_tekiopu
+fiv:
+li r10,5
+b no_tekiopu
+six:
+li r10,6
+b no_tekiopu
+sev:
+li r10,7
+b no_tekiopu
+eig:
+li r10,8
+no_tekiopu:
+stw r10,0x6C(r29)
+lwz r13,0x1F0(r2)
+lwz r14,0x1F4(r2)
+lwz r15,0x1F8(r2)
+lwz r16,0x1FC(r2)
+lwz r17,0x200(r2)
+lwz r20,0x204(r2)
+lwz r21,0x208(r2)
+lwz r22,0x20C(r2)
+lwz r23,0x210(r2)
+lwz r24,0x214(r2)
+lwz r25,0x218(r2)
+lwz r26,0x21C(r2)
+lwz r27,0x220(r2)
+lwz r28,0x224(r2)
+no22z:
+
+# enable_downfall
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq no21
+lwz r9,-0x3B8(r2)
+cmpwi r9,0
+beq no21
+addi r3,r2,0xE78
+lis r12,0x2A0
+ori r12,r12,0xA4
+mtctr r12
+bctrl
+bl send_packet1
+lis r4,0x109C
+lwz r4,0x65A0(r4)
+bl sound_packet
+li r9,0
+stw r9,-0x3B8(r2)
+no21:
+
+# enable_killme
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq no22
+lwz r9,-0x3BC(r2)
+cmpwi r9,0
+beq no22
+addi r3,r2,0xE78
+lis r12,0x252
+ori r12,r12,0xB58
+mtctr r12
+bctrl
+bl send_packet1
+lis r4,0x109C
+lwz r4,0x69D4(r4)
+bl sound_packet
+li r9,0
+stw r9,-0x3BC(r2)
+no22:
+
+# enable_settime
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq no24
+lwz r9,-0x3C4(r2)
+cmpwi r9,0
+beq no24
+addi r3,r2,0xE78
+lis r4,0x0
+lwz r6,0x14C(r2)
+addi r6,r6,-0x1000
+stw r6,0x14C(r2)
+lis r12,0x29F
+ori r12,r12,0x92E0
+mtctr r12
+bctrl
+bl send_packet1
+lis r4,0x109C
+lwz r4,0x65A0(r4)
+bl sound_packet
+li r9,0
+stw r9,-0x3C4(r2)
+no24:
+
+# enable_setdefaultspawnpoint
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq no23
+lwz r9,-0x3C0(r2)
+cmpwi r9,0
+beq no23
+addi r3,r2,0xE78
+lis r12,0x28B
+ori r12,r12,0x5158
+mtctr r12
+bctrl
+bl send_packet1
+lis r4,0x109C
+lwz r4,0x65A0(r4)
+bl sound_packet
+li r9,0
+stw r9,-0x3C0(r2)
+no23:
+
+lwz r9,0xA5C(r2)
+cmpwi r9,1
+beq Yes_Menu
+
+lwz r9,-0x2A8(r2)
+cmpwi r9,1
+beq m_enable
+lis r9,0x1099
+lis r10,0x3F00
+stw r10,0x7EA8(r9)
+b return1
+
+m_enable:
+lis r9,0x1099
+li r10,0
+stw r10,0x7EA8(r9)
+
+return1:
+lwz r9,-0x2B8(r2)
+cmpwi r9,0
+beq no2
+andi. r12,r20,0x40
+cmpwi r12,0
+beq no2
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq no2
+li r9,0x4
+stw r9,0x910(r12)
+no2:
+
+# enable FastZL
+lwz r9,-0x2BC(r2)
+cmpwi r9,0
+beq no3
+andi. r12,r20,0x80
+cmpwi r12,0
+beq no3
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq no3
+lwz r12,0x5F0(r12)
+lwz r9,0x6C(r12)
+mulli r9,r9,0x8
+lwz r12,0x8(r12)
+lwzx r12,r9,r12
+lwz r12,0x10(r12)
+lis r9,0x109E
+lwz r9,-0x7B4(r9)
+lwz r10,0x42C(r9)
+cmpw r10,r12
+beq no3
+lwz r10,0x430(r9)
+cmpw r10,r12
+beq no3
+lwz r10,0x440(r9)
+cmpw r10,r12
+beq no3
+lwz r10,0x450(r9)
+cmpw r10,r12
+beq no3
+lwz r10,0x46C(r9)
+cmpw r10,r12
+beq no3
+li r9,0
+lwz r12,0x34(r25)
+stw r9,0x990(r12)
+li r3,0x0
+li r4,0x0
+lis r12,0x28B
+ori r12,r12,0x2B8C
+mtctr r12
+bctrl
+bl send_packet
+li r3,0x0
+li r4,0x5
+addi r5,r2,0xD00
+lis r6,0x109C
+lwz r6,0x46A0(r6)
+lwz r9,0x34(r25)
+lwz r12,0x528(r9)
+stw r12,0x0(r5)
+lwz r12,0x52C(r9)
+stw r12,0x4(r5)
+lwz r12,0x530(r9)
+stw r12,0x8(r5)
+lis r12,0x28A
+ori r12,r12,0xEC5C
+mtctr r12
+bctrl
+bl send_packet
+
+no3:
+# enable_scaffold
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq no7
+lwz r9,-0x2C8(r2)
+cmpwi r9,0
+beq no7
+stwu r1,-248(r1)
+mflr r0
+stw r0,252(r1)
+stw r20,144(r1)
+stw r21,148(r1)
+stw r22,152(r1)
+stw r23,156(r1)
+stw r24,160(r1)
+stw r25,164(r1)
+stw r26,168(r1)
+stw r27,172(r1)
+stw r28,176(r1)
+stw r29,180(r1)
+stw r30,184(r1)
+stw r31,188(r1)
+stfd f26,200(r1)
+stfd f27,208(r1)
+stfd f28,216(r1)
+stfd f29,224(r1)
+stfd f30,232(r1)
+stfd f31,240(r1)
+lis r31,15872
+lwz r9,0(r31)
+stfd f25,192(r1)
+cmpwi r9,1
+beq _0x9C
+lis r9,602
+ori r9,r9,6864
+mtctr r9
+bctrl
+lis r9,553
+ori r9,r9,53244
+li r3,1
+mtctr r9
+bctrl
+li r9,1
+stw r9,0(r31)
+_0x9C:
+lis r25,790
+lis r20,899
+ori r25,r25,26648
+ori r20,r20,12556
+lis r22,16486
+ori r22,r22,32768
+li r23,0
+lis r30,16393
+lis r31,21572
+ori r30,r30,8699
+ori r31,r31,12010
+mtctr r25
+bctrl
+lis r9,524
+lwz r26,52(r3)
+ori r9,r9,15672
+mtctr r9
+addi r3,r1,8
+mr r4,r26
+lfd f31,280(r26)
+lfd f27,288(r26)
+li r21,1
+lfd f28,296(r26)
+li r24,0
+bctrl
+lis r9,524
+ori r9,r9,17104
+addi r4,r1,8
+addi r3,r1,20
+mtctr r9
+bctrl
+lwz r27,20(r1)
+lis r10,17200
+lis r9,22912
+addis r8,r27,-32768
+stw r10,32(r1)
+stw r8,36(r1)
+ori r9,r9,4
+lwz r28,24(r1)
+lis r8,610
+lfd f30,32(r1)
+ori r8,r8,13128
+stw r9,32(r1)
+mtctr r8
+addis r8,r28,-32768
+lwz r29,28(r1)
+lfs f0,32(r1)
+stw r10,40(r1)
+stw r8,44(r1)
+fsub f30,f30,f0
+addis r8,r29,-32768
+lfd f29,40(r1)
+stw r9,40(r1)
+fsub f30,f30,f31
+lfs f0,40(r1)
+stw r10,48(r1)
+stw r8,52(r1)
+fsub f29,f29,f0
+lfd f31,48(r1)
+stw r9,48(r1)
+fsub f29,f29,f27
+lfs f0,48(r1)
+fsub f31,f31,f0
+fsub f31,f31,f28
+fmul f1,f31,f31
+fmadd f1,f30,f30,f1
+bctrl
+fmr f2,f30
+fmr f0,f1
+mtctr r20
+fmr f1,f31
+fmr f31,f0
+bctrl
+stw r22,56(r1)
+stw r23,60(r1)
+fmr f2,f31
+lis r10,16470
+li r11,0
+lfd f31,56(r1)
+ori r10,r10,32768
+stw r30,64(r1)
+fmr f0,f1
+stw r31,68(r1)
+mtctr r20
+fmr f1,f29
+lfd f26,64(r1)
+fmr f29,f0
+stw r10,72(r1)
+stw r11,76(r1)
+lfd f27,72(r1)
+bctrl
+stw r22,80(r1)
+stw r23,84(r1)
+mtctr r25
+fmr f28,f1
+lfd f30,80(r1)
+stw r30,88(r1)
+stw r31,92(r1)
+lis r31,898
+ori r31,r31,43724
+lfd f25,88(r1)
+bctrl
+send_packeta:
+lis r10,4252
+lwz r8,52(r3)
+lis r9,651
+ori r10,r10,18080
+ori r9,r9,9656
+lwz r5,0(r10)
+li r6,0
+lwz r22,2168(r8)
+mtctr r9
+addi r4,r1,0x70
+stw r27,8(r1)
+stw r28,12(r1)
+li r3,0
+stw r29,16(r1)
+stw r27,112(r1)
+stw r28,116(r1)
+stw r29,120(r1)
+bctrl
+mtctr r31
+mr r23,r3
+li r3,16
+bctrl
+fmul f2,f30,f28
+lis r9,650
+li r5,0
+fmul f1,f31,f29
+ori r9,r9,55636
+mtctr r9
+li r4,0
+fdiv f2,f2,f25
+stw r23,12(r3)
+stw r21,0(r3)
+mr r30,r3
+stw r21,4(r3)
+stw r24,8(r3)
+li r3,0
+fdiv f1,f1,f26
+frsp f2,f2
+fsub f1,f1,f27
+fneg f2,f2
+frsp f1,f1
+bctrl
+mtctr r31
+mr r20,r3
+li r3,16
+bctrl
+mr r31,r3
+stw r21,0(r3)
+stw r21,4(r3)
+addi r4,r1,8
+stw r20,12(r31)
+mr r3,r26
+stw r24,8(r31)
+stw r24,8(r1)
+stw r24,12(r1)
+lis r9,0x31F
+ori r9,r9,0x3AC4
+mtctr r9
+bctrl
+lwz r10,8(r1)
+cmpwi r10,0
+beq ENDa
+lwz r3,16(r10)
+lis r24,0x304
+ori r24,r24,0xA5D8
+srawi r26,r28,8
+addze r26,r26
+rlwinm r26,r26,8,0,23
+subf r26,r26,r28
+lis r9,0x249
+ori r9,r9,0x2100
+mtctr r9
+bctrl
+cmpwi r3,0
+beq ENDa
+addi r4,r1,128
+stw r31,132(r1)
+mr r3,r22
+stw r20,128(r1)
+srawi r31,r27,4
+addze r31,r31
+rlwinm r31,r31,4,0,27
+subf r31,r31,r27
+mtctr r24
+bctrl
+mtctr r25
+srawi r25,r29,4
+addze r25,r25
+rlwinm r25,r25,4,0,27
+subf r25,r25,r29
+bctrl
+li r4,0
+lis r9,0x318
+ori r9,r9,0xC878
+mtctr r9
+bctrl
+addi r4,r1,0x70
+lis r9,0x254
+ori r9,r9,0x6850
+mtctr r9
+bctrl
+mr. r29,r3
+beq ENDa
+lwz r3,12(r29)
+li r7,0
+mr r6,r25
+mr r5,r26
+mr r4,r31
+lis r9,0x24A
+ori r9,r9,0xB328
+mtctr r9
+bctrl
+cmpwi r3,0x5FE
+beq ENDa
+addi r4,r1,128
+mr r3,r22
+stw r23,128(r1)
+stw r30,132(r1)
+mtctr r24
+bctrl
+lis r9,586
+ori r9,r9,58660
+lwz r3,12(r29)
+mtctr r9
+mr r6,r25
+mr r5,r26
+mr r4,r31
+li r7,0x5FE
+bctrl
+ENDa:
+_0x4B0:
+lwz r0,252(r1)
+lwz r20,144(r1)
+lwz r21,148(r1)
+lwz r22,152(r1)
+lwz r23,156(r1)
+lwz r24,160(r1)
+lwz r25,164(r1)
+lwz r26,168(r1)
+lwz r27,172(r1)
+lwz r28,176(r1)
+lwz r29,180(r1)
+lwz r30,184(r1)
+lwz r31,188(r1)
+lfd f25,192(r1)
+lfd f26,200(r1)
+lfd f27,208(r1)
+lfd f28,216(r1)
+lfd f29,224(r1)
+lfd f30,232(r1)
+lfd f31,240(r1)
+mtlr r0
+addi r1,r1,248
+
+no7:
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq no8
+lwz r9,-0x2CC(r2)
+cmpwi r9,0
+beq no8
+lis r12,0x411
+mtctr r12
+bctrl
+
+# Enable Builder
+no8:
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq no9
+lwz r9,-0x2D0(r2)
+cmpwi r9,0
+beq no20
+lis r2,0x1400
+addi r2,r2,0x100
+mflr r12
+stw r12,0x0(r2)
+lwz r12,0x34(r25)
+lis r9,0x100
+stw r9,0x1DC(r12)
+lwz r12,0x34(r2)
+addi r12,r12,0x1
+stw r12,0x34(r2)
+cmpwi r12,0x30
+bge RESET2f
+cmpwi r12,0x1
+bne ENDf
+li r12,-0x8
+stw r12,0x20(r2)
+Xf:
+li r12,-0x8
+stw r12,0x24(r2)
+Yf:
+li r12,-0x8
+stw r12,0x28(r2)
+Zf:
+li r3,0
+li r6,0
+addi r4,r2,0x10
+lis r5,0x109C
+lwz r5,0x46A4(r5)
+lwz r10,0x34(r25)
+lwz r12,0x528(r10)
+lwz r9,0x20(r2)
+add r12,r12,r9
+stw r12,0(r4)
+lwz r12,0x52C(r10)
+lwz r9,0x24(r2)
+add r12,r12,r9
+stw r12,4(r4)
+lwz r12,0x530(r10)
+lwz r9,0x28(r2)
+add r12,r12,r9
+stw r12,8(r4)
+lis r12,0x28B
+ori r12,r12,0x25B8
+mtctr r12
+bctrl
+bl send_packet
+lwz r12,0x28(r2)
+addi r12,r12,0x1
+stw r12,0x28(r2)
+cmpwi r12,0x8
+blt Zf
+lwz r12,0x24(r2)
+addi r12,r12,0x1
+stw r12,0x24(r2)
+cmpwi r12,0x8
+blt Yf
+lwz r12,0x20(r2)
+addi r12,r12,0x1
+stw r12,0x20(r2)
+cmpwi r12,0x8
+blt Xf
+b ENDf
+RESET2f:
+li r12,0
+stw r12,0x34(r2)
+ENDf:
+lwz r12,0x0(r2)
+mtlr r12
+
+lis r2,0x1600
+addi r2,r2,0x5000
+
+b no9
+
+no20:
+
+no9: # Modmenu(Used CafeToAsm)
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq no11
+lwz r9,-0x3A8(r2)
+cmpwi r9,0
+beq no10
+
+lis r12,0x109E
+lwz r12,-0x7B4(r12)
+lwz r2,0x258(r12)
+lis r10,0x1002
+stw r2,0x00C8(r10)
+lwz r2,0x254(r12)
+lis r10,0x1002
+stw r2,0x0004(r10)
+lwz r2,0x178(r12)
+lis r10,0x1002
+stw r2,0x0008(r10)
+lwz r2,0x174(r12)
+lis r10,0x1002
+stw r2,0x000C(r10)
+lwz r2,0x1A4(r12)
+lis r10,0x1002
+stw r2,0x0010(r10)
+lwz r2,0x1A0(r12)
+lis r10,0x1002
+stw r2,0x0014(r10)
+lwz r2,0x110(r12)
+lis r10,0x1002
+stw r2,0x0018(r10)
+lwz r2,0xFC(r12)
+lis r10,0x1002
+stw r2,0x001C(r10)
+lwz r2,0x318(r12)
+lis r10,0x1002
+stw r2,0x0020(r10)
+lwz r2,0xF8(r12)
+lis r10,0x1002
+stw r2,0x0024(r10)
+lwz r2,0x704(r12)
+lis r10,0x1002
+stw r2,0x0028(r10)
+lwz r2,0x230(r12)
+lis r10,0x1002
+stw r2,0x002C(r10)
+lwz r2,0x234(r12)
+lis r10,0x1002
+stw r2,0x0030(r10)
+lwz r2,0x238(r12)
+lis r10,0x1002
+stw r2,0x0034(r10)
+lwz r2,0x210(r12)
+lis r10,0x1002
+stw r2,0x0038(r10)
+lwz r2,0xDC(r12)
+lis r10,0x1002
+stw r2,0x003C(r10)
+lwz r2,0xF0(r12)
+lis r10,0x1002
+stw r2,0x0040(r10)
+lwz r2,0x233C(r12)
+lis r10,0x1002
+stw r2,0x0044(r10)
+lwz r2,0x6DC(r12)
+lis r10,0x1002
+stw r2,0x0048(r10)
+lwz r2,0x60C(r12)
+lis r10,0x1002
+stw r2,0x004C(r10)
+lwz r2,0x64C(r12)
+lis r10,0x1002
+stw r2,0x00CC(r10)
+lwz r2,0xAC(r12)
+lis r10,0x1002
+stw r2,0x0050(r10)
+lwz r2,0x350(r12)
+lis r10,0x1002
+stw r2,0x0054(r10)
+lwz r2,0x10E4(r12)
+lis r10,0x1002
+stw r2,0x0058(r10)
+lwz r2,0x10E8(r12)
+lis r10,0x1002
+stw r2,0x005C(r10)
+lwz r2,0x10EC(r12)
+lis r10,0x1002
+stw r2,0x0060(r10)
+lwz r2,0x10F0(r12)
+lis r10,0x1002
+stw r2,0x0064(r10)
+lwz r2,0x10F4(r12)
+lis r10,0x1002
+stw r2,0x0068(r10)
+lis r12,0x10A1
+lwz r12,-0x5940(r12)
+lwz r12,0x4(r12)
+lis r10,0x1002
+lwz r10,0x00C8(r10)
+stw r10,0x1C4(r12)
+lis r10,0x1002
+lwz r10,0x0028(r10)
+stw r10,0xC8C(r12)
+li r2,0x4814
+add r10,r12,r2
+li r2,1
+stw r2,0x0(r10)
+li r2,0x4828
+add r10,r12,r2
+li r2,0
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0004(r10)
+stw r10,0x2C4(r12)
+li r2,0x000C
+add r10,r12,r2
+li r2,1
+stw r2,0x0(r10)
+li r2,0x20
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0008(r10)
+stw r10,0x3C4(r12)
+li r2,0x01BC
+add r10,r12,r2
+li r2,0x40
+stw r2,0x0(r10)
+li r2,0x01D0
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x000C(r10)
+stw r10,0x544(r12)
+li r2,0x02BC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x02D0
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0010(r10)
+stw r10,0x644(r12)
+li r2,0x03BC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x03D0
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0014(r10)
+lis r2,0x0000
+ori r2,r2,0x0744
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x053C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0550
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000C
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0018(r10)
+lis r2,0x0000
+ori r2,r2,0x0844
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x063C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0650
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x001C(r10)
+lis r2,0x0000
+ori r2,r2,0x0944
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x073C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0750
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0020(r10)
+lis r2,0x0000
+ori r2,r2,0x0A5C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x083C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0850
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0024(r10)
+lis r2,0x0000
+ori r2,r2,0x0B74
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x093C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0950
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+li r2,0x0A54
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0A68
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x002C(r10)
+lis r2,0x0000
+ori r2,r2,0x0DA4
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x0B6C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0B80
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000A
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0030(r10)
+lis r2,0x0000
+ori r2,r2,0x0F0C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x0C84
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0C98
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0004
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0034(r10)
+lis r2,0x0000
+ori r2,r2,0x1024
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x0D9C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0DB0
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0004
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0038(r10)
+lis r2,0x0000
+ori r2,r2,0x113C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x0F04
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0F18
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0004
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x003C(r10)
+lis r2,0x0000
+ori r2,r2,0x1254
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x101C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1030
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000C
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0040(r10)
+lis r2,0x0000
+ori r2,r2,0x136C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x1134
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1148
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0004
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0044(r10)
+lis r2,0x0000
+ori r2,r2,0x1484
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x124C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1260
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0004
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0048(r10)
+lis r2,0x0000
+ori r2,r2,0x0DF4
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x1364
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1378
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x004C(r10)
+lis r2,0x0000
+ori r2,r2,0x16DC
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x147C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1490
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000A
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x00CC(r10)
+lis r2,0x0000
+ori r2,r2,0x17F4
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x0DEC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x0E00
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000A
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0050(r10)
+lis r2,0x0000
+ori r2,r2,0x190C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x16D4
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x16E8
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0050(r10)
+lis r2,0x0000
+ori r2,r2,0x1A24
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x17EC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1800
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0050(r10)
+lis r2,0x0000
+ori r2,r2,0x1B3C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x1904
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1918
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0050(r10)
+lis r2,0x0000
+ori r2,r2,0x1C54
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x1A1C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1A30
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000A
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0050(r10)
+lis r2,0x0000
+ori r2,r2,0x1D6C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x1B34
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1B48
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000B
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0050(r10)
+lis r2,0x0000
+ori r2,r2,0x1E84
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x1C4C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1C60
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000C
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0050(r10)
+lis r2,0x0000
+ori r2,r2,0x204C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x1D64
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1D78
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000D
+stw r2,0x0(r10)
+li r2,0x1E7C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x1E90
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000E
+stw r2,0x0(r10)
+li r2,0x2044
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x2058
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000F
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0054(r10)
+lis r2,0x0000
+ori r2,r2,0x2164
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x215C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x2170
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000C
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0058(r10)
+lis r2,0x0000
+ori r2,r2,0x227C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x2274
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x2288
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000D
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x005C(r10)
+lis r2,0x0000
+ori r2,r2,0x2394
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x238C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x23A0
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000E
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0060(r10)
+lis r2,0x0000
+ori r2,r2,0x24AC
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x24A4
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x24B8
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000F
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0064(r10)
+lis r2,0x0000
+ori r2,r2,0x25C4
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x25BC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x25D0
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000F
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0068(r10)
+lis r2,0x0000
+ori r2,r2,0x26DC
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x26D4
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0040
+stw r2,0x0(r10)
+li r2,0x26E8
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x000D
+stw r2,0x0(r10)
+b no11
+no10:
+lis r12,0x109D
+ori r12,r12,0xF84C
+lwz r12,0x0(r12)
+lis r2,0x0000
+ori r2,r2,0x0340
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x00C8(r10)
+lis r2,0x0000
+ori r2,r2,0x000C
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0004(r10)
+lwz r2,0x10(r12)
+lis r10,0x1002
+stw r2,0x0008(r10)
+lwz r2,0x30(r12)
+lis r10,0x1002
+stw r2,0x000C(r10)
+lis r2,0x0000
+ori r2,r2,0x0060
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0010(r10)
+lis r2,0x0000
+ori r2,r2,0x0060
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0014(r10)
+lis r2,0x0000
+ori r2,r2,0x0060
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0018(r10)
+lis r2,0x0000
+ori r2,r2,0x0030
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x001C(r10)
+li r2,0x2CC
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0020(r10)
+li r2,0x2CC
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0024(r10)
+li r2,0x2CC
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0028(r10)
+lis r2,0x0000
+ori r2,r2,0x0004
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x002C(r10)
+lis r2,0x0000
+ori r2,r2,0x0004
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0030(r10)
+lis r2,0x0000
+ori r2,r2,0x0004
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0034(r10)
+lis r2,0x0000
+ori r2,r2,0x0004
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0038(r10)
+lis r2,0x0000
+ori r2,r2,0x0004
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x003C(r10)
+lis r2,0x0000
+ori r2,r2,0x0004
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0040(r10)
+lis r2,0x0000
+ori r2,r2,0x02B4
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0044(r10)
+lis r2,0x0000
+ori r2,r2,0x1034
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0048(r10)
+lis r2,0x0000
+ori r2,r2,0x00A4
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x004C(r10)
+lis r2,0x0000
+ori r2,r2,0x00A8
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x00CC(r10)
+lis r2,0x0000
+ori r2,r2,0x0058
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0050(r10)
+lis r2,0x0000
+ori r2,r2,0x00E4
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0078(r10)
+lis r2,0x0000
+ori r2,r2,0x0214
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x007C(r10)
+lis r2,0x0000
+ori r2,r2,0x026C
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0080(r10)
+lis r2,0x0000
+ori r2,r2,0x0040
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0084(r10)
+lis r2,0x0000
+ori r2,r2,0x0054
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0088(r10)
+lis r2,0x0000
+ori r2,r2,0x00E0
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x008C(r10)
+lis r2,0x0000
+ori r2,r2,0x0124
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0054(r10)
+lis r2,0x0000
+ori r2,r2,0x003C
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0058(r10)
+lis r2,0x0000
+ori r2,r2,0x0038
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x005C(r10)
+lis r2,0x0000
+ori r2,r2,0x0204
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0060(r10)
+lis r2,0x0000
+ori r2,r2,0x0264
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0064(r10)
+lis r2,0x0000
+ori r2,r2,0x0358
+add r2,r2,r12
+lwz r2,0x0(r2)
+lis r10,0x1002
+stw r2,0x0068(r10)
+lis r12,0x10A0
+ori r12,r12,0xA6C0
+lwz r12,0x0(r12)
+lis r2,0x0000
+ori r2,r2,0x0004
+add r12,r12,r2
+lwz r12,0x0(r12)
+lis r10,0x1002
+lwz r10,0x00C8(r10)
+lis r2,0x0000
+ori r2,r2,0x01C4
+add r2,r2,r12
+stw r10,0x0(r2)
+lis r10,0x1002
+lwz r10,0x0028(r10)
+lis r2,0x0000
+ori r2,r2,0x0C8C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x4814
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x4828
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0004(r10)
+lis r2,0x0000
+ori r2,r2,0x02C4
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x000C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0020
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0008(r10)
+lis r2,0x0000
+ori r2,r2,0x03C4
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x01BC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x01D0
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x000C(r10)
+lis r2,0x0000
+ori r2,r2,0x0544
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x02BC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x02D0
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0010(r10)
+lis r2,0x0000
+ori r2,r2,0x0644
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x03BC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x03D0
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0014(r10)
+lis r2,0x0000
+ori r2,r2,0x0744
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x053C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0550
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0018(r10)
+lis r2,0x0000
+ori r2,r2,0x0844
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x063C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0650
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x001C(r10)
+lis r2,0x0000
+ori r2,r2,0x0944
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x073C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0750
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0002
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0020(r10)
+lis r2,0x0000
+ori r2,r2,0x0A5C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x083C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0850
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0024(r10)
+lis r2,0x0000
+ori r2,r2,0x0B74
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x093C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0950
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0A54
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0A68
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x002C(r10)
+lis r2,0x0000
+ori r2,r2,0x0DA4
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x0B6C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0B80
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0002
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0030(r10)
+lis r2,0x0000
+ori r2,r2,0x0F0C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x0C84
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0C98
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0034(r10)
+lis r2,0x0000
+ori r2,r2,0x1024
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x0D9C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0DB0
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0038(r10)
+lis r2,0x0000
+ori r2,r2,0x113C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x0F04
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0F18
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0002
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x003C(r10)
+lis r2,0x0000
+ori r2,r2,0x1254
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x101C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x1030
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0005
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0040(r10)
+lis r2,0x0000
+ori r2,r2,0x136C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x1134
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x1148
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0006
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0044(r10)
+lis r2,0x0000
+ori r2,r2,0x1484
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x124C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x1260
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0003
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0048(r10)
+lis r2,0x0000
+ori r2,r2,0x0DF4
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x1364
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x1378
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0004
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x004C(r10)
+lis r2,0x0000
+ori r2,r2,0x16DC
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x147C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x1490
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x00CC(r10)
+lis r2,0x0000
+ori r2,r2,0x17F4
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x0DEC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x0E00
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0050(r10)
+lis r2,0x0000
+ori r2,r2,0x190C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x16D4
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x16E8
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0078(r10)
+lis r2,0x0000
+ori r2,r2,0x1A24
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x17EC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x1800
+add r10,r12,r2
+li r2,0
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x007C(r10)
+stw r10,0x1B3C(r12)
+li r2,1
+stw r2,0x1904(r12)
+li r2,0
+stw r2,0x1918(r12)
+lis r10,0x1002
+lwz r10,0x0080(r10)
+stw r10,0x1C54(r12)
+li r2,1
+stw r2,0x1A1C(r12)
+li r2,0
+stw r2,0x1A30(r12)
+lis r10,0x1002
+lwz r10,0x0084(r10)
+stw r10,0x1D6C(r12)
+li r2,0x1B34
+add r10,r12,r2
+li r2,1
+stw r2,0x0(r10)
+li r2,0
+stw r2,0x1B48(r12)
+lis r10,0x1002
+lwz r10,0x0088(r10)
+stw r10,0x1E84(r12)
+li r2,0x1C4C
+add r10,r12,r2
+li r2,1
+stw r2,0x0(r10)
+li r2,0x1C60
+add r10,r12,r2
+li r2,0
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x008C(r10)
+stw r10,0x204C(r12)
+li r2,0x1D64
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x1D78
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+li r2,0x1E7C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x1E90
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+li r2,0x2044
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x2058
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0054(r10)
+lis r2,0x0000
+ori r2,r2,0x2164
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x215C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x2170
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0058(r10)
+lis r2,0x0000
+ori r2,r2,0x227C
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x2274
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x2288
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x005C(r10)
+lis r2,0x0000
+ori r2,r2,0x2394
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x238C
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x23A0
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0060(r10)
+lis r2,0x0000
+ori r2,r2,0x24AC
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x24A4
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x24B8
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0064(r10)
+lis r2,0x0000
+ori r2,r2,0x25C4
+add r2,r2,r12
+stw r10,0x0(r2)
+li r2,0x25BC
+add r10,r12,r2
+lis r2,0x0000
+ori r2,r2,0x0001
+stw r2,0x0(r10)
+li r2,0x25D0
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+lis r10,0x1002
+lwz r10,0x0068(r10)
+stw r10,0x26DC(r12)
+li r2,0x26D4
+add r10,r12,r2
+li r2,1
+stw r2,0x0(r10)
+li r2,0x26E8
+add r10,r12,r2
+lis r2,0x0000
+stw r2,0x0(r10)
+
+no11:
+lis r2,0x1600
+addi r2,r2,0x5000
+
+Yes_Menu:
+lis r30,0x10A1
+lwz r30,-0x6C90(r30)
+lis r10,0x101
+addi r10,r10,0x101
+cmpw r30,r10
+bne SKIP2
+li r10,0
+stw r10,0xA28(r2)
+SKIP2:
+
+lis r31,0x382
+ori r31,r31,0xC8C0
+
+bl ShineClient
+.long 0x00A70062
+.long 0x00530068
+.long 0x0069006E
+.long 0x00650043
+.long 0x006C0069
+.long 0x0065006E
+.long 0x00740000
+ShineClient:
+mflr r5
+addi r3,r2,0x260
+li r4,0x64
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+bl back
+.long 0x00A70038
+.long 0x00200000
+back:
+mflr r5
+addi r3,r2,0x190
+li r4,0x64
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+bl enemy
+.long 0x0045006E
+.long 0x0065006D
+.long 0x00790027
+.long 0x00730020
+.long 0x00480050
+.long 0x003A0000
+enemy:
+mflr r5
+addi r3,r2,0xA70
+li r4,0x64
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+bl enemyhp
+.long 0x00250066
+.long 0x0
+enemyhp:
+mflr r5
+addi r3,r2,0xA90
+li r4,0x64
+crset 4*cr1+eq
+lwz r12,0xC8(r25)
+cmpwi r12,0
+beq skiphpa
+lwz r12,0x1F8(r12)
+lwz r12,0x30(r12)
+lfs f1,0xC(r12)
+b end_the_0
+skiphpa:
+lis r12,0x0
+stw r12,0x84(r2)
+lfs f1,0x84(r2)
+end_the_0:
+mtctr r31
+bctrl
+
+bl ip
+.long 0x00A70063
+.long 0x00490050
+.long 0x003A0020
+.long 0x00250073
+.long 0x0
+ip:
+mflr r5
+addi r3,r2,0xB80
+li r4,0x64
+lis r6,0x1023
+addi r6,r6,0x459C
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+bl version
+.long 0x00A70063
+.long 0x00530068
+.long 0x0069006E
+.long 0x00650043
+.long 0x006C0069
+.long 0x0065006E
+.long 0x00740020
+.long 0x00760033
+.long 0x002E0043
+.long 0x002E0031
+.long 0x00330000
+version:
+mflr r5
+addi r3,r2,0xB50
+li r4,0x64
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+bl Created
+.long 0x00A70063
+.long 0x00430072
+.long 0x00650061
+.long 0x00740065
+.long 0x00640020
+.long 0x00620079
+.long 0x00200043
+.long 0x006C006F
+.long 0x00760065
+.long 0x00720000
+Created:
+mflr r5
+li r4,0x64
+addi r3,r2,0xAC0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# GuardAttack
+bl Guard
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660047
+.long 0x00750061
+.long 0x00720064
+.long 0x00410074
+.long 0x00740061
+.long 0x0063006B
+.long 0x0
+Guard:
+mflr r5
+li r4,0x64
+addi r3,r2,0x1A0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# AutoSword
+bl AutoSword
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660041
+.long 0x00750074
+.long 0x006F0053
+.long 0x0077006F
+.long 0x00720064
+.long 0x0
+AutoSword:
+mflr r5
+li r4,0x64
+addi r3,r2,0x1D0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# AutoAim
+bl AutoAim
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660041
+.long 0x00750074
+.long 0x006F0041
+.long 0x0069006D
+.long 0x0
+AutoAim:
+mflr r5
+li r4,0x64
+addi r3,r2,0x230
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# AutoBow
+bl AutoBow
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660041
+.long 0x00750074
+.long 0x006F0042
+.long 0x006F0077
+.long 0x0
+AutoBow:
+mflr r5
+li r4,0x64
+addi r3,r2,0x280
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# KillAura
+bl KillAura
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x0066004B
+.long 0x0069006C
+.long 0x006C0041
+.long 0x00750072
+.long 0x00610000
+KillAura:
+mflr r5
+li r4,0x64
+addi r3,r2,0x2A0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# TPAura
+bl TPAura
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660054
+.long 0x00500041
+.long 0x00750072
+.long 0x00610000
+TPAura:
+mflr r5
+li r4,0x64
+addi r3,r2,0x2C0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# MultiBow
+bl MultiBow
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x0066004D
+.long 0x0075006C
+.long 0x00740069
+.long 0x0042006F
+.long 0x00770000
+MultiBow:
+mflr r5
+li r4,0x64
+addi r3,r2,0x2E0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# NoSlowdown
+bl NoSlowdown
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x0066004E
+.long 0x006F0053
+.long 0x006C006F
+.long 0x00770064
+.long 0x006F0077
+.long 0x006E0000
+NoSlowdown:
+mflr r5
+li r4,0x64
+addi r3,r2,0x370
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# cord
+bl cord
+.long 0x00250064
+.long 0x002C0020
+.long 0x00250064
+.long 0x002C0020
+.long 0x00250064
+.long 0x0
+cord:
+mflr r5
+li r4,0x64
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq SKIP
+lwz r6,0x528(r12)
+lwz r7,0x52C(r12)
+addi r7,r7,1
+lwz r8,0x530(r12)
+addi r3,r2,0xB00
+crset 4*cr1+eq
+mtctr r31
+bctrl
+SKIP:
+
+bl zltodown
+.long 0x00A70038
+.long 0x005A004C
+.long 0x0020002B
+.long 0x00200044
+.long 0x006F0077
+.long 0x006E0020
+.long 0x0074006F
+.long 0x0020006F
+.long 0x00700065
+.long 0x006E0000
+zltodown:
+mflr r5
+li r4,0x64
+addi r3,r2,0xCA0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+SKIPa:
+
+# Useful
+bl use
+.long 0x00550073
+.long 0x00650066
+.long 0x0075006C
+.long 0x0
+use:
+mflr r5
+li r4,0x64
+addi r3,r2,0xD60
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# CraftEverything
+bl one
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660049
+.long 0x006E0073
+.long 0x00740061
+.long 0x006E0074
+.long 0x00430072
+.long 0x00610066
+.long 0x00740000
+one:
+mflr r5
+li r4,0x64
+addi r3,r2,0xC00
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# 3x3Crafting
+bl two
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660033
+.long 0x00780033
+.long 0x00430072
+.long 0x00610066
+.long 0x00740069
+.long 0x006E0067
+.long 0x0
+two:
+mflr r5
+li r4,0x64
+addi r3,r2,0xCE0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# MuteVoiceChat
+bl a
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x0066004D
+.long 0x00750074
+.long 0x00650056
+.long 0x006F0069
+.long 0x00630065
+.long 0x00430068
+.long 0x00610074
+.long 0x0
+a:
+mflr r5
+li r4,0x64
+addi r3,r2,0xD20
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# Fly
+bl af
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660043
+.long 0x0061006E
+.long 0x0046006C
+.long 0x00790000
+af:
+mflr r5
+li r4,0x64
+addi r3,r2,0xD90
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# NoFallDamage
+bl aff
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x0066004E
+.long 0x006F0046
+.long 0x0061006C
+.long 0x006C0044
+.long 0x0061006D
+.long 0x00610067
+.long 0x00650000
+aff:
+mflr r5
+li r4,0x64
+addi r3,r2,0xE00
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# NoCrashArrow
+bl NoCrashArrow
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x0066004E
+.long 0x006F0043
+.long 0x00720061
+.long 0x00730068
+.long 0x00410072
+.long 0x0072006F
+.long 0x00770000
+NoCrashArrow:
+mflr r5
+li r4,0x64
+addi r3,r2,0xE30
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# FastZR
+bl fastzr
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660046
+.long 0x00610073
+.long 0x0074005A
+.long 0x00520000
+fastzr:
+mflr r5
+li r4,0x64
+addi r3,r2,0xE60
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# FastZL
+bl fastzl
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660046
+.long 0x00610073
+.long 0x0074005A
+.long 0x004C0000
+fastzl:
+mflr r5
+li r4,0x64
+addi r3,r2,0xE80
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# CanBreakAll
+bl bed
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660043
+.long 0x0061006E
+.long 0x00420072
+.long 0x00650061
+.long 0x006B0041
+.long 0x006C006C
+.long 0x0
+bed:
+mflr r5
+li r4,0x64
+addi r3,r2,0xEB0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# UPSpeed
+bl spA
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660055
+.long 0x00500053
+.long 0x00700065
+.long 0x00650064
+.long 0x0
+spA:
+mflr r5
+li r4,0x64
+ori r3,r2,0xEF0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# Scaffold
+bl Scaffold
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660053
+.long 0x00630061
+.long 0x00660066
+.long 0x006F006C
+.long 0x00640000
+Scaffold:
+mflr r5
+li r4,0x64
+ori r3,r2,0xF10
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# Nuker
+bl nuker
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x0066004E
+.long 0x0075006B
+.long 0x00650072
+.long 0x0
+nuker:
+mflr r5
+li r4,0x64
+ori r3,r2,0xF40
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# Builder
+bl builder
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660042
+.long 0x00750069
+.long 0x006C0064
+.long 0x00650072
+.long 0x0
+builder:
+mflr r5
+li r4,0x64
+ori r3,r2,0xF70
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# Item
+bl itea
+.long 0x00490074
+.long 0x0065006D
+.long 0x0
+itea:
+mflr r5
+li r4,0x64
+addi r3,r2,0xF90
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# GetHackItems
+bl hakk
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660047
+.long 0x00650074
+.long 0x00480061
+.long 0x0063006B
+.long 0x00490074
+.long 0x0065006D
+.long 0x00730000
+hakk:
+mflr r5
+li r4,0x64
+addi r3,r2,0xFA0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# GetHackItems2
+bl hakk2
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660047
+.long 0x00650074
+.long 0x00480061
+.long 0x0063006B
+.long 0x00490074
+.long 0x0065006D
+.long 0x00730032
+.long 0x0
+hakk2:
+mflr r5
+li r4,0x64
+addi r3,r2,0xFD0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# ModMenu
+bl ModMenu
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x0066004D
+.long 0x006F0064
+.long 0x004D0065
+.long 0x006E0075
+.long 0x0
+ModMenu:
+mflr r5
+li r4,0x64
+addi r3,r2,-0xF0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# RainbowArmor
+bl RainbowArmor
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660052
+.long 0x00610069
+.long 0x006E0062
+.long 0x006F0077
+.long 0x00410072
+.long 0x006D006F
+.long 0x00720000
+RainbowArmor:
+mflr r5
+li r4,0x64
+addi r3,r2,-0xA0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# Command
+bl commanda
+.long 0x0043006F
+.long 0x006D006D
+.long 0x0061006E
+.long 0x00640000
+commanda:
+mflr r5
+li r4,0x64
+addi r3,r2,0x1000
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# GiveItem
+bl GiveItem
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660047
+.long 0x00690076
+.long 0x00650049
+.long 0x00740065
+.long 0x006D0000
+GiveItem:
+mflr r5
+li r4,0x64
+addi r3,r2,0x1010
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# EnchantItem
+bl EnchantItem
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660045
+.long 0x006E0063
+.long 0x00680061
+.long 0x006E0074
+.long 0x00490074
+.long 0x0065006D
+.long 0x0
+EnchantItem:
+mflr r5
+li r4,0x64
+addi r3,r2,0x60
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# EnchantItemId
+bl EnchantItemId
+.long 0x003E0049
+.long 0x0064003A
+.long 0x00200025
+.long 0x00640000
+EnchantItemId:
+mflr r5
+li r4,0x64
+lwz r6,0x1100(r2)
+addi r3,r2,0x1120
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# EnchantItemLevel
+bl EnchantItemLevel
+.long 0x003E004C
+.long 0x00650076
+.long 0x0065006C
+.long 0x003A0020
+.long 0x00250064
+.long 0x0
+EnchantItemLevel:
+mflr r5
+li r4,0x64
+lwz r6,0x1104(r2)
+addi r3,r2,0x90
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# GiveItemId
+bl GiveItemId
+.long 0x003E0049
+.long 0x0064003A
+.long 0x00200025
+.long 0x00640000
+GiveItemId:
+mflr r5
+li r4,0x64
+lwz r6,0x1030(r2)
+addi r3,r2,0x1040
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# GiveItemDamage
+bl GiveItemDamage
+.long 0x003E0044
+.long 0x0061006D
+.long 0x00610067
+.long 0x0065003A
+.long 0x00200025
+.long 0x00640000
+GiveItemDamage:
+mflr r5
+li r4,0x64
+lwz r6,0x1034(r2)
+addi r3,r2,0x1070
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# GiveItemCount
+bl GiveItemCount
+.long 0x003E0043
+.long 0x006F0075
+.long 0x006E0074
+.long 0x003A0020
+.long 0x00250064
+.long 0x0
+GiveItemCount:
+mflr r5
+li r4,0x64
+lwz r6,0x1038(r2)
+addi r3,r2,0x10B0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# GiveItemPlayer
+bl GiveItemPlayer
+.long 0x003E0050
+.long 0x006C0061
+.long 0x00790065
+.long 0x0072003A
+.long 0x00200025
+.long 0x00640000
+GiveItemPlayer:
+mflr r5
+li r4,0x64
+lwz r6,0x103C(r2)
+addi r3,r2,0x40
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# SendButton
+bl SendButton
+.long 0x003E0053
+.long 0x0065006E
+.long 0x00640000
+SendButton:
+mflr r5
+li r4,0x64
+addi r3,r2,0x10F0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# ToggleDownfall
+bl ToggleDownfall
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660054
+.long 0x006F0067
+.long 0x0067006C
+.long 0x00650044
+.long 0x006F0077
+.long 0x006E0066
+.long 0x0061006C
+.long 0x006C0000
+ToggleDownfall:
+mflr r5
+li r4,0x64
+addi r3,r2,0xB0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# KillMe
+bl KillMe
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x0066004B
+.long 0x0069006C
+.long 0x006C004D
+.long 0x00650000
+KillMe:
+mflr r5
+li r4,0x64
+addi r3,r2,0xE0
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# SetSpawnpoint
+bl SetSpawnpoint
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660053
+.long 0x00650074
+.long 0x00530070
+.long 0x00610077
+.long 0x006E0070
+.long 0x006F0069
+.long 0x006E0074
+.long 0x0
+SetSpawnpoint:
+mflr r5
+li r4,0x64
+addi r3,r2,0x100
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# SetTime
+bl SetTime
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660053
+.long 0x00650074
+.long 0x00540069
+.long 0x006D0065
+.long 0x0
+SetTime:
+mflr r5
+li r4,0x64
+addi r3,r2,0x130
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# PvP
+bl PvP
+.long 0x00500076
+.long 0x00500000
+PvP:
+mflr r5
+li r4,0x64
+addi r3,r2,0x150
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+# RiptideAttack
+bl RiptideAttack
+.long 0x00A70066
+.long 0x003E00A7
+.long 0x00660052
+.long 0x00690070
+.long 0x00740069
+.long 0x00640065
+.long 0x00410074
+.long 0x00740061
+.long 0x0063006B
+.long 0x0
+RiptideAttack:
+mflr r5
+li r4,0x64
+addi r3,r2,0x160
+crset 4*cr1+eq
+mtctr r31
+bctrl
+
+lis r28,0x310
+ori r28,r28,0x3064
+
+lis r29,0x310
+ori r29,r29,0x3080
+
+li r3,1
+mtctr r28
+bctrl
+# matrixMode(int)
+
+mtctr r29
+bctrl
+# loadIdentity
+
+lis r12,0
+stw r12,0x3F4(r2)
+lfs f1,0x3F4(r2)
+
+lis r12,0x43E0
+stw r12,0x3F8(r2)
+lfs f2,0x3F8(r2)
+
+lis r12,0x4374
+stw r12,0x3FC(r2)
+lfs f3,0x3FC(r2)
+
+lis r12,0x453B
+stw r12,0x408(r2)
+lfs f6,0x408(r2)
+
+lis r12,0x311
+ori r12,r12,0xD4C
+mtctr r12
+bctrl
+# ortho(double, double, double, double, double, double)
+
+li r3,0
+mtctr r28
+bctrl
+# matrixMode(int)
+
+mtctr r29
+bctrl
+# loadIdentity
+
+li r12,0
+stw r12,0x40C(r2)
+lfs f1,0x40C(r2)
+stw r12,0x410(r2)
+lfs f2,0x410(r2)
+lis r29,0x30E
+ori r29,r29,0x4B54
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+lis r12,0x30F
+ori r12,r12,0x974C
+mtctr r12
+bctrl
+# disableCull
+
+lis r12,0x30E
+ori r12,r12,0x4B24
+mtctr r12
+bctrl
+# disableLighting
+
+lis r12,0x30E
+ori r12,r12,0x9B9C
+mtctr r12
+bctrl
+# disableDepthTest
+
+lis r12,0x30E
+ori r12,r12,0x6268
+mtctr r12
+bctrl
+# disableTexture
+
+lis r12,0x30E
+ori r12,r12,0x5284
+mtctr r12
+bctrl
+# enableBlend
+
+li r3,4
+li r4,5
+lis r12,0x30E
+ori r12,r12,0x52A0
+mtctr r12
+bctrl
+# blendFunc(int, int)
+
+lwz r21,0x104(r25)
+
+lis r22,0x30E
+ori r28,r22,0x4BD8
+ori r23,r22,0x4B6C
+ori r22,r22,0x4B3C
+
+lis r24,0x312
+ori r24,r24,0x6B88
+
+lis r26,0x20B
+ori r26,r26,0x8D4
+
+lis r12,0x108D
+lis r9,0xBFCF
+ori r9,r9,0x5C29
+stw r9,-0x4AFC(r12)
+
+cmpwi r30,0
+beq SKIP32
+lis r12,0x101
+addi r12,r12,0x101
+cmpw r30,r12
+bnel Reset_Menu
+
+SKIP32:
+li r9,0
+cmpwi r20,0x180
+beql Set_Menu
+cmpwi r20,0x4000
+beql Disable_Menu
+b NEXT3
+NEXT3:
+lwz r12,0xA14(r2)
+cmpwi r12,0
+bnel SetDrop
+cmpwi r12,3
+beq EnchantCommandMenu
+cmpwi r12,2
+beq GiveCommandMenu
+cmpwi r12,1
+beq OpeningMenu
+
+lwz r12,0xA28(r2)
+lis r10,0x1095
+ori r10,r10,0x3EBC
+cmpw r12,r10
+beq SKIP5
+andi. r12,r12,0x10
+cmpwi r12,0x10
+beq Pause
+
+SKIP5:
+#----------------------------------------#
+# ShineClient
+
+lis r12,0x108D
+lis r9,0xC0A0
+stw r9,-0x4AFC(r12)
+
+mtctr r22
+bctrl
+# pushMatrix
+
+lis r12,0x400A
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lis r12,0x4000
+stw r12,-0xFC(r2)
+lfs f1,-0xFC(r2)
+stw r12,-0x104(r2)
+lfs f2,-0x104(r2)
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+lis r12,0x10AD
+lwz r12,0x1C58(r12)
+cmpwi r12,0
+beq title_A
+lwz r12,0x4E(r12)
+cmpwi r12,0x0061
+blt title_a
+cmpwi r12,0x0067
+bgt title_a
+lis r10,0x00A7
+addi r10,r10,0x0061
+stw r10,0x260(r2)
+title_a:
+cmpwi r12,0x0041
+blt title_b
+cmpwi r12,0x0047
+bgt title_b
+lis r10,0x00A7
+addi r10,r10,0x0061
+stw r10,0x260(r2)
+title_b:
+cmpwi r12,0x0068
+blt title_c
+cmpwi r12,0x006E
+bgt title_c
+lis r10,0x00A7
+addi r10,r10,0x0065
+stw r10,0x260(r2)
+title_c:
+cmpwi r12,0x0048
+blt title_d
+cmpwi r12,0x004E
+bgt title_d
+lis r10,0x00A7
+addi r10,r10,0x0065
+stw r10,0x260(r2)
+title_d:
+cmpwi r12,0x0070
+blt title_e
+cmpwi r12,0x0075
+bgt title_e
+lis r10,0x00A7
+addi r10,r10,0x0064
+stw r10,0x260(r2)
+title_e:
+cmpwi r12,0x0050
+blt title_f
+cmpwi r12,0x0055
+bgt title_f
+lis r10,0x00A7
+addi r10,r10,0x0064
+stw r10,0x260(r2)
+title_f:
+cmpwi r12,0x0076
+blt title_g
+cmpwi r12,0x007A
+bgt title_g
+lis r10,0x00A7
+addi r10,r10,0x0036
+stw r10,0x260(r2)
+title_g:
+cmpwi r12,0x0056
+blt title_h
+cmpwi r12,0x005A
+bgt title_h
+lis r10,0x00A7
+addi r10,r10,0x0036
+stw r10,0x260(r2)
+title_h:
+cmpwi r12,0x0030
+blt title_i
+cmpwi r12,0x0039
+bgt title_i
+lis r10,0x00A7
+addi r10,r10,0x0037
+stw r10,0x260(r2)
+title_i:
+addi r3,r2,0x348
+addi r4,r2,0x260
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+#----------------------------------------#
+# zl + down to open
+
+cmpwi r30,0
+beq SKIP31
+lis r10,0x101
+addi r10,r10,0x101
+cmpw r30,r10
+bne SKIP30
+SKIP31:
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+lis r12,0x3F80
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lfs f1,-0x100(r2)
+lis r12,0x4363
+stw r12,-0x104(r2)
+lfs f2,-0x104(r2)
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0xCA0
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP30:
+
+#----------------------------------------#
+# craft everything title
+
+lis r12,0xC0A0
+stw r12,0x428(r2)
+li r11,0xA00
+lwz r12,-0x2A0(r2)
+cmpwi r12,1
+lis r10,0x43E1
+beql Set_update
+lwz r12,-0x2A0(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xA00(r2)
+cmpw r12,r10
+bge SKIP10
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lis r12,0xBF80
+stw r12,-0xE10(r2)
+lfs f0,-0xE10(r2)
+lfs f1,0xA00(r2)
+fadd f1,f1,f0
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0xC0A
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP10:
+
+#----------------------------------------#
+# Enemy
+
+lis r10,0x101
+addi r10,r10,0x101
+cmpw r30,r10
+beq SKIP17
+
+lis r12,0x40A0
+stw r12,0x3B0(r2)
+
+lwz r12,0xC8(r25)
+cmpwi r12,0
+beq SKIPX
+lfs f12,0x3B0(r2)
+lfs f0,0x3B4(r2)
+fadd f0,f0,f12
+lwz r12,0x3B4(r2)
+lis r9,0x4100
+cmpw r12,r9
+bge end_2
+stfs f0,0x3B4(r2)
+b end_2
+
+SKIPX:
+lfs f12,0x3B0(r2)
+lfs f0,0x3B4(r2)
+fsub f0,f0,f12
+lwz r12,0x3B4(r2)
+lis r9,0xC250
+cmpw r12,r9
+ble end_1
+stfs f0,0x3B4(r2)
+b end_2
+
+end_1:
+stw r9,0x3B4(r2)
+
+end_2:
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+lis r12,0x3F90
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lfs f1,0x3B4(r2)
+
+lis r12,0x42A0
+stw r12,0xA6C(r2)
+lfs f2,0xA6C(r2)
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0xA70
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP17:
+
+#----------------------------------------#
+# Enemy's HP
+
+lis r10,0x101
+addi r10,r10,0x101
+cmpw r30,r10
+beq SKIP18
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+lis r12,0x3F90
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lfs f1,0x3B4(r2)
+
+lis r12,0x42BA
+stw r12,0xA6C(r2)
+lfs f2,0xA6C(r2)
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0xA90
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP18:
+
+#----------------------------------------#
+# 3x3 craft title
+
+li r11,0xA50
+lwz r12,-0x2A4(r2)
+cmpwi r12,1
+lis r10,0x43E1
+ori r10,r10,0xF000
+beql Set_update
+lwz r12,-0x2A4(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xA50(r2)
+cmpw r12,r10
+bge SKIP13
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0xA50(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0xCEA
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP13:
+
+#----------------------------------------#
+# mute voice chat title
+
+li r11,0xA60
+lwz r12,-0x2A8(r2)
+cmpwi r12,1
+lis r10,0x43DD
+ori r10,r10,0xE000
+beql Set_update
+lwz r12,-0x2A8(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xA60(r2)
+cmpw r12,r10
+bge SKIP16
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0xA60(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xD26
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP16:
+
+#----------------------------------------#
+# fly title
+
+li r11,0xBE0
+lwz r12,-0x2AC(r2)
+cmpwi r12,1
+lis r10,0x43EF
+beql Set_update
+lwz r12,-0x2AC(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xBE0(r2)
+cmpw r12,r10
+bge SKIP161
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0xBE0(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xD96
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP161:
+
+#----------------------------------------#
+# no fall damage title
+
+li r11,0xDF8
+lwz r12,-0x2B0(r2)
+cmpwi r12,1
+lis r10,0x43DF
+ori r10,r10,0x9000
+beql Set_update
+lwz r12,-0x2B0(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xDF8(r2)
+cmpw r12,r10
+bge SKIP1611
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lis r12,0x3EC0
+stw r12,-0xE10(r2)
+lfs f0,-0xE10(r2)
+lfs f1,0xDF8(r2)
+fadd f1,f1,f0
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xE06
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP1611:
+
+#----------------------------------------#
+# no crash arrow title
+
+li r11,0xE28
+lwz r12,-0x2B4(r2)
+cmpwi r12,1
+lis r10,0x43DD
+beql Set_update
+lwz r12,-0x2B4(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xE28(r2)
+cmpw r12,r10
+bge SKIP11
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0xE28(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xE36
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP11:
+
+#----------------------------------------#
+# fast zr title
+
+li r11,0xE58
+lwz r12,-0x2B8(r2)
+cmpwi r12,1
+lis r10,0x43EE
+beql Set_update
+lwz r12,-0x2B8(r2)
+cmpwi r12,0
+lis r10,0x4401
+beql Disable_update
+lwz r12,0xE58(r2)
+cmpw r12,r10
+bge SKIP11s
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lis r12,0xBFA0
+stw r12,-0xE10(r2)
+lfs f0,-0xE10(r2)
+lfs f1,0xE58(r2)
+fadd f1,f1,f0
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xE66
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP11s:
+
+#----------------------------------------#
+# fast zl title
+
+li r11,0xE98
+lwz r12,-0x2BC(r2)
+cmpwi r12,1
+lis r10,0x43EE
+beql Set_update
+lwz r12,-0x2BC(r2)
+cmpwi r12,0
+lis r10,0x4401
+beql Disable_update
+lwz r12,0xE98(r2)
+cmpw r12,r10
+bge SKIP11sl
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f0,-0xE10(r2)
+lfs f1,0xE98(r2)
+fadd f1,f1,f0
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xE86
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP11sl:
+
+#----------------------------------------#
+# can break all title
+
+li r11,0xEE0
+lwz r12,-0x2C0(r2)
+cmpwi r12,1
+lis r10,0x43E2
+beql Set_update
+lwz r12,-0x2C0(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xEE0(r2)
+cmpw r12,r10
+bge SKIP11sls
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0xEE0(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xEB6
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP11sls:
+
+#----------------------------------------#
+# up speed title
+
+li r11,0xEE8
+lwz r12,-0x2C4(r2)
+cmpwi r12,1
+lis r10,0x43EA
+beql Set_update
+lwz r12,-0x2C4(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xEE8(r2)
+cmpw r12,r10
+bge SKIPE0
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0xEE8(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xEF6
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIPE0:
+
+#----------------------------------------#
+# scaffold title
+
+li r11,0x400
+lwz r12,-0x2C8(r2)
+cmpwi r12,1
+lis r10,0x43EA
+beql Set_update
+lwz r12,-0x2C8(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0x400(r2)
+cmpw r12,r10
+bge SKIPE1
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0x400(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xF16
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIPE1:
+
+#----------------------------------------#
+# nuker title
+
+li r11,0xEA8
+lwz r12,-0x2CC(r2)
+cmpwi r12,1
+lis r10,0x43F0
+beql Set_update
+lwz r12,-0x2CC(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xEA8(r2)
+cmpw r12,r10
+bge SKIPE2
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f0,-0xE10(r2)
+lfs f1,0xEA8(r2)
+fadd f1,f1,f0
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xF46
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIPE2:
+
+#----------------------------------------#
+# builder title
+
+li r11,0xF30
+lwz r12,-0x2D0(r2)
+cmpwi r12,1
+lis r10,0x43EE
+beql Set_update
+lwz r12,-0x2D0(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xF30(r2)
+cmpw r12,r10
+bge SKIPE3
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0xF30(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xF76
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIPE3:
+
+#----------------------------------------#
+# ModMenu
+
+li r11,-0xC4
+lwz r12,-0x3A8(r2)
+cmpwi r12,1
+lis r10,0x43EA
+beql Set_update
+lwz r12,-0x3A8(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,-0xC4(r2)
+cmpw r12,r10
+bge SKIPE4
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,-0xC4(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,-0xEA
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIPE4:
+
+#----------------------------------------#
+# rainbow armor title
+
+li r11,-0x4C
+lwz r12,-0x3AC(r2)
+cmpwi r12,1
+lis r10,0x43DE
+beql Set_update
+lwz r12,-0x3AC(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,-0x4C(r2)
+cmpw r12,r10
+bge SKIPE4a
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,-0x4C(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,-0x9A
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIPE4a:
+
+#----------------------------------------#
+# riptide attack title
+
+li r11,0x20
+lwz r12,-0x4A0(r2)
+cmpwi r12,1
+lis r10,0x43E0
+addi r10,r10,0x2000
+beql Set_update
+lwz r12,-0x4A0(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0x20(r2)
+cmpw r12,r10
+bge SKIPE4ab
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0x20(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0x16A
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIPE4ab:
+
+#----------------------------------------#
+# guard attack title
+
+li r11,0xB30
+lwz r12,-0x4A4(r2)
+cmpwi r12,1
+lis r10,0x43E0
+beql Set_update
+lwz r12,-0x4A4(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0xB30(r2)
+cmpw r12,r10
+bge SKIP19
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0xB30(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0x1A6
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP19:
+
+#----------------------------------------#
+# auto sword title
+
+li r11,0x1C8
+lwz r12,-0x4A8(r2)
+cmpwi r12,1
+lis r10,0x43E5
+beql Set_update
+lwz r12,-0x4A8(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0x1C8(r2)
+cmpw r12,r10
+bge SKIP19z
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0x1C8(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0x1D6
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP19z:
+
+#----------------------------------------#
+# auto aim title
+
+li r11,0x10
+lwz r12,-0x4AC(r2)
+cmpwi r12,1
+lis r10,0x43ED
+beql Set_update
+lwz r12,-0x4AC(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0x10(r2)
+cmpw r12,r10
+bge SKIP19zb
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0x10(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0x236
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP19zb:
+
+#----------------------------------------#
+# auto bow title
+
+li r11,0x18
+lwz r12,-0x4B0(r2)
+cmpwi r12,1
+lis r10,0x43EA
+beql Set_update
+lwz r12,-0x4B0(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0x18(r2)
+cmpw r12,r10
+bge SKIP19za
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0x18(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0x286
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP19za:
+
+#----------------------------------------#
+# kill aura title
+
+li r11,0x300
+lwz r12,-0x4B4(r2)
+cmpwi r12,1
+lis r10,0x43EB
+beql Set_update
+lwz r12,-0x4B4(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0x300(r2)
+cmpw r12,r10
+bge SKIP19za1
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0x300(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0x2A6
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP19za1:
+
+#----------------------------------------#
+# tp aura title
+
+li r11,0x308
+lwz r12,-0x4B8(r2)
+cmpwi r12,1
+lis r10,0x43EC
+beql Set_update
+lwz r12,-0x4B8(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0x308(r2)
+cmpw r12,r10
+bge SKIP19za13
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0x308(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0x2C6
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP19za13:
+
+#----------------------------------------#
+# multi bow title
+
+li r11,0x310
+lwz r12,-0x4BC(r2)
+cmpwi r12,1
+lis r10,0x43EA
+beql Set_update
+lwz r12,-0x4BC(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0x310(r2)
+cmpw r12,r10
+bge SKIP19za12
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0x310(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0x2E6
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP19za12:
+
+#----------------------------------------#
+# no slowdown title
+
+li r11,0x318
+lwz r12,-0x4C0(r2)
+cmpwi r12,1
+lis r10,0x43E2
+beql Set_update
+lwz r12,-0x4C0(r2)
+cmpwi r12,0
+lis r10,0x4400
+beql Disable_update
+lwz r12,0x318(r2)
+cmpw r12,r10
+bge SKIP19za12a
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lfs f1,0x318(r2)
+
+bl GetHeight
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0x376
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+SKIP19za12a:
+
+#----------------------------------------#
+# created
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lis r12,0x4100
+stw r12,0x420(r2)
+lfs f1,0x420(r2)
+
+lis r12,0x41E0
+stw r12,0x420(r2)
+lfs f2,0x420(r2)
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xAC0
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# cord
+
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq SKIP1
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+lis r12,0x3F80
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lis r12,0x434C
+stw r12,0x424(r2)
+lfs f1,0x424(r2)
+
+lis r12,0x4100
+stw r12,-0x150(r2)
+lfs f2,-0x150(r2)
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xB00
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+SKIP1:
+b END
+#----------------------------------------#
+
+Set_Menu:
+lis r12,0x10A1
+lwz r12,-0x6C90(r12)
+lis r9,0x100
+cmpw r12,r9
+beq return
+
+li r9,1
+stw r9,0xA14(r2)
+lwz r10,0x34(r25)
+cmpwi r10,0
+beq SKIP_POINTER
+
+lwz r11,0x148(r10)
+stw r11,-0x200(r2)
+lwz r11,0x14C(r10)
+stw r11,-0x204(r2)
+SKIP_POINTER:
+stw r9,-0x304(r2)
+blr
+
+Disable_Menu:
+li r9,0
+stw r9,0xA14(r2)
+
+Reset_Menu:
+li r10,0
+stw r10,-0x310(r2)
+stw r10,0x1110(r2)
+lwz r10,0x34(r25)
+cmpwi r10,0
+beq SKIP_POINTER2
+li r11,0
+stw r11,0x814(r10)
+SKIP_POINTER2:
+blr
+
+Set_update:
+lwzx r12,r11,r2
+cmpw r12,r10
+ble return
+lis r12,0x4094
+addi r12,r12,0x2000
+addi r9,r11,4
+stwx r12,r9,r2
+lfsx f13,r9,r2
+lfsx f14,r11,r2
+fsub r14,r14,r13
+stfsx f14,r11,r2
+blr
+
+Disable_update:
+lwzx r12,r11,r2
+cmpw r12,r10
+bge return
+lis r12,0x4094
+addi r12,r12,0x2000
+addi r9,r11,4
+stwx r12,r9,r2
+lfsx f13,r9,r2
+lfsx f14,r11,r2
+fadd r14,r14,r13
+stfsx f14,r11,r2
+blr
+
+OpeningMenu:
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq SKIP_POINTER1
+lis r11,0x100
+stw r11,0x814(r12)
+lwz r11,-0x200(r2)
+stw r11,0x148(r12)
+lwz r11,-0x204(r2)
+stw r11,0x14C(r12)
+lwz r3,0x144(r25)
+
+SKIP_POINTER1:
+
+lis r12,0x108D
+lis r9,0xC5A0
+stw r9,-0x4AFC(r12)
+
+lis r12,0x102F
+lwz r10,-0x59D(r12)
+cmpwi r10,0x80
+beq ClickSlot
+
+andi. r10,r20,0x100
+cmpwi r10,0x100
+beq DownSlot
+
+andi. r10,r20,0x200
+cmpwi r10,0x200
+beq UpSlot
+
+andi. r10,r20,0x800
+cmpwi r10,0x800
+beq LeftSlot
+
+andi. r10,r20,0x400
+cmpwi r10,0x400
+beq RightSlot
+b Reset_Slot
+
+ClickSlot:
+lwz r12,-0x304(r2)
+cmpwi r12,1
+beq Nod
+lwz r12,-0x300(r2)
+lwz r10,-0x308(r2)
+
+mulli r11,r12,-0x4
+addi r11,r11,-0x2A0
+
+mulli r10,r10,-0x100
+add r11,r11,r10
+
+lwzx r9,r11,r2
+cmpwi r9,0
+beq Nof
+li r9,0
+stwx r9,r11,r2
+
+# 解除
+
+cmpwi r11,-0x4C0
+bne unomo
+lis r12,0x3F80
+lis r9,0x105E
+stw r12,-0x4F60(r9)
+unomo:
+
+cmpwi r11,-0x2C4
+bne disable_speed0
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq disable_speed0
+lis r9,0x3CA3
+ori r9,r9,0xD70A
+stw r9,0x734(r12)
+lis r12,0x1067
+lis r9,0x3E26
+ori r9,r9,0xAD89
+stw r9,-0x5338(r12)
+disable_speed0:
+
+cmpwi r11,-0x2D0
+bne unun
+lwz r12,0x34(r25)
+li r9,0x0
+stw r9,0x1DC(r12)
+unun:
+
+cmpwi r11,-0x4A0
+bne the_no_1
+lis r12,0x1090
+lis r9,0x271
+ori r9,r9,0xD184
+stw r9,-0x5350(r12)
+the_no_1:
+
+cmpwi r11,-0x3AC
+bne akl
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq akl
+
+li r3,1
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0
+li r5,0
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0xE78(r2)
+li r3,0
+li r4,5
+addi r5,r2,0xE78
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+bl send_packet
+li r3,1
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0
+li r5,0
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0xE78(r2)
+li r3,0
+li r4,6
+addi r5,r2,0xE78
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+bl send_packet
+li r3,1
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0
+li r5,0
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0xE78(r2)
+li r3,0
+li r4,7
+addi r5,r2,0xE78
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+bl send_packet
+li r3,1
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0
+li r5,0
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0xE78(r2)
+li r3,0
+li r4,8
+addi r5,r2,0xE78
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+bl send_packet
+
+akl:
+
+b Nod
+Nof:
+li r9,1
+stwx r9,r11,r2
+
+# 適応
+
+cmpwi r11,-0x4C0
+bne unomoa
+li r12,0
+lis r9,0x105E
+stw r12,-0x4F60(r9)
+unomoa:
+
+li r12,0
+cmpwi r11,-0x4AC
+bne j_s
+stw r12,-0x4B0(r2)
+j_s:
+cmpwi r11,-0x4B0
+bne j_sa
+stw r12,-0x4AC(r2)
+j_sa:
+
+li r12,0
+cmpwi r11,-0x4B4
+bne j_sb
+stw r12,-0x4B8(r2)
+stw r12,-0x4BC(r2)
+j_sb:
+cmpwi r11,-0x4B8
+bne j_sc
+stw r12,-0x4B4(r2)
+stw r12,-0x4BC(r2)
+j_sc:
+cmpwi r11,-0x4BC
+bne j_sd
+stw r12,-0x4B4(r2)
+stw r12,-0x4B8(r2)
+j_sd:
+
+cmpwi r11,-0x2C4
+bne enable_speed0
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq enable_speed0
+lis r9,0x3E50
+stw r9,0x734(r12)
+lis r12,0x1067
+lis r9,0x3F60
+stw r9,-0x5338(r12)
+enable_speed0:
+
+cmpwi r11,-0x4A0
+bne the_no_2
+lis r12,0x1090
+lis r9,0x272
+ori r9,r9,0xCF00
+stw r9,-0x5350(r12)
+the_no_2:
+
+cmpwi r11,-0x3B0
+bne huhu
+lis r4,0x109C
+lwz r4,0x684C(r4)
+bl sound_packet
+li r9,2
+stw r9,0xA14(r2)
+huhu:
+
+cmpwi r11,-0x3B4
+bne huhuk
+lis r4,0x109C
+lwz r4,0x684C(r4)
+bl sound_packet
+li r9,3
+stw r9,0xA14(r2)
+huhuk:
+
+cmpwi r11,-0x3A0
+bne nogu
+lis r4,0x109C
+lwz r4,0x6350(r4)
+bl sound_packet
+nogu:
+
+cmpwi r11,-0x3A4
+bne nogua
+lis r4,0x109C
+lwz r4,0x6350(r4)
+bl sound_packet
+nogua:
+
+li r9,0
+cmpwi r11,-0x2C8
+bne ad
+stw r9,-0x2CC(r2)
+stw r9,-0x2D0(r2)
+lwz r12,0x34(r25)
+li r9,0x0
+stw r9,0x1DC(r12)
+ad:
+cmpwi r11,-0x2CC
+bne ada
+stw r9,-0x2C8(r2)
+stw r9,-0x2D0(r2)
+lwz r12,0x34(r25)
+li r9,0x0
+stw r9,0x1DC(r12)
+ada:
+cmpwi r11,-0x2D0
+bne add
+stw r9,-0x2C8(r2)
+stw r9,-0x2CC(r2)
+add:
+
+Nod:
+li r9,1
+stw r9,-0x304(r2)
+b SKIPs
+
+DownSlot:
+lwz r12,-0x304(r2)
+cmpwi r12,1
+beq SKIPs
+
+lwz r12,-0x308(r2)
+cmpwi r12,2
+beq continue1
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne SKIPzz
+continue1:
+lwz r12,-0x300(r2)
+cmpwi r12,0xC
+bne SKIPzz
+li r12,-1
+stw r12,-0x300(r2)
+SKIPzz:
+
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne SKIPzz1
+lwz r12,-0x300(r2)
+cmpwi r12,9
+bne SKIPzz1
+li r12,-1
+stw r12,-0x300(r2)
+SKIPzz1:
+
+lwz r12,-0x300(r2)
+addi r12,r12,1
+stw r12,-0x300(r2)
+
+li r12,1
+stw r12,-0x304(r2)
+b SKIPs
+
+UpSlot:
+lwz r12,-0x304(r2)
+cmpwi r12,1
+beq SKIPs
+
+lwz r12,-0x308(r2)
+cmpwi r12,2
+beq continue2
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne SKIPz
+continue2:
+lwz r12,-0x300(r2)
+cmpwi r12,0
+bne SKIPz
+li r12,0xD
+stw r12,-0x300(r2)
+SKIPz:
+
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne SKIPz3
+lwz r12,-0x300(r2)
+cmpwi r12,0
+bne SKIPz3
+li r12,0xA
+stw r12,-0x300(r2)
+SKIPz3:
+
+lwz r12,-0x300(r2)
+addi r12,r12,-1
+stw r12,-0x300(r2)
+
+li r12,1
+stw r12,-0x304(r2)
+b SKIPs
+
+LeftSlot:
+lwz r12,-0x304(r2)
+cmpwi r12,1
+beq SKIPs
+
+lwz r12,-0x308(r2)
+cmpwi r12,0
+beq SKIPs
+cmpwi r12,1
+beql ItemsToUseful
+cmpwi r12,2
+beql PvPToItem
+
+b execute_left
+
+PvPToItem:
+lwz r9,-0x300(r2)
+cmpwi r9,0xC
+beq skip_a_skip_1
+cmpwi r9,0xB
+beq skip_a_skip_2
+cmpwi r9,0xA
+beq skip_a_skip_3
+cmpwi r9,9
+beq skip_a_skip_4
+cmpwi r9,8
+beq skip_a_skip_5
+cmpwi r9,7
+beq skip_a_skip_6
+cmpwi r9,6
+beq skip_a_skip_6
+cmpwi r9,5
+beq skip_a_skip_6
+cmpwi r9,4
+beq skip_a_skip_7
+blr
+skip_a_skip_1:
+li r12,9
+stw r12,-0x300(r2)
+blr
+skip_a_skip_2:
+li r12,8
+stw r12,-0x300(r2)
+blr
+skip_a_skip_3:
+li r12,7
+stw r12,-0x300(r2)
+blr
+skip_a_skip_4:
+li r12,6
+stw r12,-0x300(r2)
+blr
+skip_a_skip_5:
+li r12,5
+stw r12,-0x300(r2)
+blr
+skip_a_skip_6:
+li r12,4
+stw r12,-0x300(r2)
+blr
+skip_a_skip_7:
+li r12,3
+stw r12,-0x300(r2)
+blr
+
+ItemsToUseful:
+lwz r9,-0x300(r2)
+cmpwi r9,4
+beq skip_a_skip1
+cmpwi r9,5
+beq skip_a_skip2
+cmpwi r9,6
+beq skip_a_skip3
+cmpwi r9,7
+beq skip_a_skip4
+cmpwi r9,8
+beq skip_a_skip5
+cmpwi r9,9
+beq skip_a_skip6
+blr
+skip_a_skip1:
+li r12,7
+stw r12,-0x300(r2)
+blr
+skip_a_skip2:
+li r12,8
+stw r12,-0x300(r2)
+blr
+skip_a_skip3:
+li r12,9
+stw r12,-0x300(r2)
+blr
+skip_a_skip4:
+li r12,0xA
+stw r12,-0x300(r2)
+blr
+skip_a_skip5:
+li r12,0xB
+stw r12,-0x300(r2)
+blr
+skip_a_skip6:
+li r12,0xC
+stw r12,-0x300(r2)
+blr
+
+execute_left:
+lwz r12,-0x308(r2)
+addi r12,r12,-1
+stw r12,-0x308(r2)
+li r12,1
+stw r12,-0x304(r2)
+b SKIPs
+
+RightSlot:
+lwz r12,-0x304(r2)
+cmpwi r12,1
+beq SKIPs
+
+lwz r12,-0x308(r2)
+cmpwi r12,0
+beql UsefulToItem
+cmpwi r12,1
+beql ItemToPvP
+
+b execute_right
+
+ItemToPvP:
+lwz r12,-0x300(r2)
+cmpwi r12,4
+beq skip__1
+cmpwi r12,5
+beq skip__2
+cmpwi r12,6
+beq skip__3
+cmpwi r12,7
+beq skip__4
+cmpwi r12,8
+beq skip__5
+cmpwi r12,9
+beq skip__6
+blr
+skip__1:
+li r12,7
+stw r12,-0x300(r2)
+blr
+skip__2:
+li r12,8
+stw r12,-0x300(r2)
+blr
+skip__3:
+li r12,9
+stw r12,-0x300(r2)
+blr
+skip__4:
+li r12,0xA
+stw r12,-0x300(r2)
+blr
+skip__5:
+li r12,0xB
+stw r12,-0x300(r2)
+blr
+skip__6:
+li r12,0xC
+stw r12,-0x300(r2)
+blr
+
+UsefulToItem:
+lwz r12,-0x300(r2)
+cmpwi r12,4
+beq skip_the_skip1
+cmpwi r12,5
+beq skip_the_skip2
+cmpwi r12,6
+beq skip_the_skip3
+cmpwi r12,7
+beq skip_the_skip4
+cmpwi r12,8
+beq skip_the_skip5
+cmpwi r12,9
+beq skip_the_skip6
+cmpwi r12,0xA
+beq skip_the_skip7
+cmpwi r12,0xB
+beq skip_the_skip8
+cmpwi r12,0xC
+beq skip_the_skip9
+blr
+skip_the_skip1:
+li r12,3
+stw r12,-0x300(r2)
+blr
+skip_the_skip2:
+li r12,4
+stw r12,-0x300(r2)
+blr
+skip_the_skip3:
+li r12,4
+stw r12,-0x300(r2)
+blr
+skip_the_skip4:
+li r12,4
+stw r12,-0x300(r2)
+blr
+skip_the_skip5:
+li r12,5
+stw r12,-0x300(r2)
+blr
+skip_the_skip6:
+li r12,6
+stw r12,-0x300(r2)
+blr
+skip_the_skip7:
+li r12,7
+stw r12,-0x300(r2)
+blr
+skip_the_skip8:
+li r12,8
+stw r12,-0x300(r2)
+blr
+skip_the_skip9:
+li r12,9
+stw r12,-0x300(r2)
+blr
+
+execute_right:
+lwz r12,-0x308(r2)
+addi r12,r12,1
+stw r12,-0x308(r2)
+li r12,1
+stw r12,-0x304(r2)
+b SKIPs
+
+Reset_Slot:
+li r12,0
+stw r12,-0x304(r2)
+
+SKIPs:
+
+#----------------------------------------#
+# Useful
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+lis r12,0x4000
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lis r12,0x4120
+stw r12,-0xFC4(r2)
+lfs f1,-0xFC4(r2)
+lis r12,0x4170
+stw r12,-0x104(r2)
+lfs f2,-0x104(r2)
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xD60
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# Item
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+lis r12,0x4000
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lis r12,0x4250
+stw r12,-0xFC4(r2)
+lfs f1,-0xFC4(r2)
+lis r12,0x4170
+stw r12,-0x104(r2)
+lfs f2,-0x104(r2)
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xF90
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# Command
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+lis r12,0x3FE6
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lis r12,0x4264
+stw r12,-0xFC4(r2)
+lfs f1,-0xFC4(r2)
+lis r12,0x4280
+stw r12,-0x104(r2)
+lfs f2,-0x104(r2)
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0x1000
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# MenuBackGround
+
+li r3,1
+li r4,8
+lis r12,0x30E
+ori r12,r12,0x52A0
+mtctr r12
+bctrl
+# blendFunc(int, int)
+
+mtctr r22
+bctrl
+# pushMatrix
+
+lis r12,0x435A
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lis r12,0x41D0
+stw r12,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lis r12,0xC21D
+ori r12,r12,0xE000
+stw r12,-0xFC(r2)
+lfs f1,-0xFC(r2)
+lis r12,0xBEA0
+stw r12,-0x104(r2)
+stw r12,-0x104(r2)
+lfs f2,-0x104(r2)
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r3,r2,0x348
+addi r4,r2,0x190
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+mr r3,r21
+addi r4,r2,0x348
+li r5,1
+li r6,1
+li r7,-1
+li r8,1
+li r9,1
+lis r12,0x30E
+ori r12,r12,0x9534
+mtctr r12
+bctrl
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+li r3,4
+li r4,5
+lis r12,0x30E
+ori r12,r12,0x52A0
+mtctr r12
+bctrl
+# blendFunc(int, int)
+
+#----------------------------------------#
+# craft everything menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,0
+bne SKIP_B
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne SKIP_B
+addi r4,r2,0xC00
+b SKIP_A
+SKIP_B:
+addi r4,r2,0xC06
+SKIP_A:
+addi r3,r2,0x348
+lwz r12,-0x2A0(r2)
+
+
+cmpwi r12,0
+beq SKIP_C
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xC06(r2)
+SKIP_C:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# 3x3 craft menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,1
+bne NOsa
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne NOsa
+addi r4,r2,0xCE0
+b Noaa
+NOsa:
+addi r4,r2,0xCE6
+Noaa:
+addi r3,r2,0x348
+
+
+lwz r12,-0x2A4(r2)
+cmpwi r12,0
+beq Nog
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xCE6(r2)
+Nog:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# mute voice chat menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,2
+bne NOsai
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne NOsai
+addi r4,r2,0xD20
+b Noaai
+NOsai:
+addi r4,r2,0xD26
+Noaai:
+addi r3,r2,0x348
+
+
+lwz r12,-0x2A8(r2)
+cmpwi r12,0
+beq Nogi
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xD26(r2)
+Nogi:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# fly menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,3
+bne NOsi
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne NOsi
+addi r4,r2,0xD90
+b Noai
+NOsi:
+addi r4,r2,0xD96
+Noai:
+addi r3,r2,0x348
+
+
+lwz r12,-0x2AC(r2)
+cmpwi r12,0
+beq Noi
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xD96(r2)
+Noi:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# no fall damage menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,4
+bne NOsdz
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne NOsdz
+addi r4,r2,0xE00
+b Noadz
+NOsdz:
+addi r4,r2,0xE06
+Noadz:
+addi r3,r2,0x348
+
+
+lwz r12,-0x2B0(r2)
+cmpwi r12,0
+beq Noid
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xE06(r2)
+Noid:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# no crash arrow menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,5
+bne NOsdzf
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne NOsdzf
+addi r4,r2,0xE30
+b Noadzf
+NOsdzf:
+addi r4,r2,0xE36
+Noadzf:
+addi r3,r2,0x348
+
+
+lwz r12,-0x2B4(r2)
+cmpwi r12,0
+beq Noidf
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xE36(r2)
+Noidf:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# fast zr menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,6
+bne NOsdzfd
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne NOsdzfd
+addi r4,r2,0xE60
+b Noadzfd
+NOsdzfd:
+addi r4,r2,0xE66
+Noadzfd:
+addi r3,r2,0x348
+
+
+lwz r12,-0x2B8(r2)
+cmpwi r12,0
+beq Noidfd
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xE66(r2)
+Noidfd:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# fast zl menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,7
+bne NOsdzfdh
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne NOsdzfdh
+addi r4,r2,0xE80
+b Noadzfdh
+NOsdzfdh:
+addi r4,r2,0xE86
+Noadzfdh:
+addi r3,r2,0x348
+
+
+lwz r12,-0x2BC(r2)
+cmpwi r12,0
+beq Noidfdh
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xE86(r2)
+Noidfdh:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# can break all menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,8
+bne NOsdzfdhs
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne NOsdzfdhs
+addi r4,r2,0xEB0
+b Noadzfdhs
+NOsdzfdhs:
+addi r4,r2,0xEB6
+Noadzfdhs:
+addi r3,r2,0x348
+
+lwz r12,-0x2C0(r2)
+cmpwi r12,0
+beq Noidfdhs
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xEB6(r2)
+Noidfdhs:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# up speed menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,0x9
+bne SKIP_D
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne SKIP_D
+addi r4,r2,0xEF0
+b SKIP_E
+SKIP_D:
+addi r4,r2,0xEF6
+SKIP_E:
+addi r3,r2,0x348
+
+lwz r12,-0x2C4(r2)
+cmpwi r12,0
+beq SKIP_F
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xEF6(r2)
+SKIP_F:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# scaffold menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,0xA
+bne SKIP_Da
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne SKIP_Da
+addi r4,r2,0xF10
+b SKIP_Ea
+SKIP_Da:
+addi r4,r2,0xF16
+SKIP_Ea:
+addi r3,r2,0x348
+
+lwz r12,-0x2C8(r2)
+cmpwi r12,0
+beq SKIP_Fa
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xF16(r2)
+SKIP_Fa:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# nuker menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,0xB
+bne SKIP_Daa
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne SKIP_Daa
+addi r4,r2,0xF40
+b SKIP_Eaa
+SKIP_Daa:
+addi r4,r2,0xF46
+SKIP_Eaa:
+addi r3,r2,0x348
+
+
+lwz r12,-0x2CC(r2)
+cmpwi r12,0
+beq SKIP_Faa
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xF46(r2)
+SKIP_Faa:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# builder menu
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,-0xF8(r2)
+
+bl GetHeight1
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,0xC
+bne SKIP_Daaa
+lwz r12,-0x308(r2)
+cmpwi r12,0
+bne SKIP_Daaa
+addi r4,r2,0xF70
+b SKIP_Eaaa
+SKIP_Daaa:
+addi r4,r2,0xF76
+SKIP_Eaaa:
+addi r3,r2,0x348
+
+lwz r12,-0x2D0(r2)
+cmpwi r12,0
+beq SKIP_Faaa
+lis r12,0x00A7
+addi r12,r12,0x0039
+stw r12,0xF76(r2)
+SKIP_Faaa:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# get hack items menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lis r12,0x42C0
+stw r12,0xF58(r2)
+lfs f1,0xF58(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,0
+bne SKIP_Bs
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne SKIP_Bs
+addi r4,r2,0xFA0
+b SKIP_As
+SKIP_Bs:
+addi r4,r2,0xFA6
+SKIP_As:
+addi r3,r2,0x348
+lwz r12,-0x3A0(r2)
+
+cmpwi r12,0
+beq SKIP_Cs
+lis r12,0x00A7
+addi r12,r12,0x0041
+stw r12,0xFA6(r2)
+cmpwi r20,0
+bne SKIP_Cs
+lis r12,0x00A7
+addi r12,r12,0x0066
+stw r12,0xFA6(r2)
+li r9,0
+stw r9,-0x3A0(r2)
+SKIP_Cs:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# get hack items2 menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0xF58(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,1
+bne SKIP_Bsa
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne SKIP_Bsa
+addi r4,r2,0xFD0
+b SKIP_Asa
+SKIP_Bsa:
+addi r4,r2,0xFD6
+SKIP_Asa:
+addi r3,r2,0x348
+lwz r12,-0x3A4(r2)
+
+cmpwi r12,0
+beq SKIP_Csa
+lis r12,0x00A7
+addi r12,r12,0x0041
+stw r12,0xFD6(r2)
+cmpwi r20,0
+bne SKIP_Csa
+lis r12,0x00A7
+addi r12,r12,0x0066
+stw r12,0xFD6(r2)
+li r9,0
+stw r9,-0x3A4(r2)
+SKIP_Csa:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# modmenu menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0xF58(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,2
+bne SKIP_Bsaa
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne SKIP_Bsaa
+addi r4,r2,-0xF0
+b SKIP_Asaa
+SKIP_Bsaa:
+addi r4,r2,-0xEA
+SKIP_Asaa:
+addi r3,r2,0x348
+lwz r12,-0x3A8(r2)
+
+cmpwi r12,0
+beq SKIP_Csaa
+lis r12,0x00A7
+addi r12,r12,0x0041
+stw r12,-0xEA(r2)
+SKIP_Csaa:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# rainbow armor menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0xF58(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,3
+bne SKIP_Bsaaa
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne SKIP_Bsaaa
+addi r4,r2,-0xA0
+b SKIP_Asaaa
+SKIP_Bsaaa:
+addi r4,r2,-0x9A
+SKIP_Asaaa:
+addi r3,r2,0x348
+lwz r12,-0x3AC(r2)
+
+cmpwi r12,0
+beq SKIP_Csaaa
+lis r12,0x00A7
+addi r12,r12,0x0041
+stw r12,-0x9A(r2)
+SKIP_Csaaa:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# give item menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0xF58(r2)
+
+bl GetHeight3
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,4
+bne SKIP_Bsaaaiz
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne SKIP_Bsaaaiz
+addi r4,r2,0x1010
+b SKIP_Asaaaiz
+SKIP_Bsaaaiz:
+addi r4,r2,0x1016
+SKIP_Asaaaiz:
+addi r3,r2,0x348
+lwz r12,-0x3B0(r2)
+
+cmpwi r12,0
+beq SKIP_Csiiz
+lis r12,0x00A7
+addi r12,r12,0x0042
+stw r12,0x1016(r2)
+cmpwi r20,0
+bne SKIP_Csiiz
+lis r12,0x00A7
+addi r12,r12,0x0066
+stw r12,0x1016(r2)
+li r9,0
+stw r9,-0x3B0(r2)
+SKIP_Csiiz:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+#----------------------------------------#
+# enchant item menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0xF58(r2)
+
+bl GetHeight3
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,5
+bne SKIP_Bsaaaizd
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne SKIP_Bsaaaizd
+addi r4,r2,0x60
+b SKIP_Asaaaizd
+SKIP_Bsaaaizd:
+addi r4,r2,0x66
+SKIP_Asaaaizd:
+addi r3,r2,0x348
+lwz r12,-0x3B4(r2)
+
+cmpwi r12,0
+beq SKIP_Csiizd
+lis r12,0x00A7
+addi r12,r12,0x0042
+stw r12,0x66(r2)
+cmpwi r20,0
+bne SKIP_Csiizd
+lis r12,0x00A7
+addi r12,r12,0x0066
+stw r12,0x66(r2)
+li r9,0
+stw r9,-0x3B4(r2)
+SKIP_Csiizd:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+#----------------------------------------#
+# toggle downfall menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0xF58(r2)
+
+bl GetHeight3
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,6
+bne SKIP_Bsaaaizdx
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne SKIP_Bsaaaizdx
+addi r4,r2,0xB0
+b SKIP_Asaaaizdx
+SKIP_Bsaaaizdx:
+addi r4,r2,0xB6
+SKIP_Asaaaizdx:
+addi r3,r2,0x348
+lwz r12,-0x3B8(r2)
+
+cmpwi r12,0
+beq SKIP_Csiizdx
+lis r12,0x00A7
+addi r12,r12,0x0042
+stw r12,0xB6(r2)
+cmpwi r20,0
+bne SKIP_Csiizdx
+lis r12,0x00A7
+addi r12,r12,0x0066
+stw r12,0xB6(r2)
+li r9,0
+stw r9,-0x3B8(r2)
+SKIP_Csiizdx:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+#----------------------------------------#
+# kill me menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0xF58(r2)
+
+bl GetHeight3
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,7
+bne the_skip1
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne the_skip1
+addi r4,r2,0xE0
+b the_skip2
+the_skip1:
+addi r4,r2,0xE6
+the_skip2:
+addi r3,r2,0x348
+lwz r12,-0x3BC(r2)
+
+cmpwi r12,0
+beq the_skip3
+lis r12,0x00A7
+addi r12,r12,0x0042
+stw r12,0xE6(r2)
+cmpwi r20,0
+bne the_skip3
+lis r12,0x00A7
+addi r12,r12,0x0066
+stw r12,0xE6(r2)
+li r9,0
+stw r9,-0x3BC(r2)
+the_skip3:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+#----------------------------------------#
+# set spawnpoint menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0xF58(r2)
+
+bl GetHeight3
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,8
+bne the_skip11
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne the_skip11
+addi r4,r2,0x100
+b the_skip21
+the_skip11:
+addi r4,r2,0x106
+the_skip21:
+addi r3,r2,0x348
+lwz r12,-0x3C0(r2)
+
+cmpwi r12,0
+beq the_skip31
+lis r12,0x00A7
+addi r12,r12,0x0042
+stw r12,0x106(r2)
+cmpwi r20,0
+bne the_skip31
+lis r12,0x00A7
+addi r12,r12,0x0066
+stw r12,0x106(r2)
+li r9,0
+stw r9,-0x3C0(r2)
+the_skip31:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+#----------------------------------------#
+# set time menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0xF58(r2)
+
+bl GetHeight3
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,9
+bne the_skip111
+lwz r12,-0x308(r2)
+cmpwi r12,1
+bne the_skip111
+addi r4,r2,0x130
+b the_skip211
+the_skip111:
+addi r4,r2,0x136
+the_skip211:
+addi r3,r2,0x348
+lwz r12,-0x3C4(r2)
+
+cmpwi r12,0
+beq the_skip311
+lis r12,0x00A7
+addi r12,r12,0x0042
+stw r12,0x136(r2)
+cmpwi r20,0
+bne the_skip311
+lis r12,0x00A7
+addi r12,r12,0x0066
+stw r12,0x136(r2)
+li r9,0
+stw r9,-0x3C4(r2)
+the_skip311:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+#----------------------------------------#
+# PvP
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+lis r12,0x4000
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lis r12,0x42BA
+stw r12,-0xFC4(r2)
+lfs f1,-0xFC4(r2)
+lis r12,0x4170
+stw r12,-0x104(r2)
+lfs f2,-0x104(r2)
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0x150
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# riptide attack menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lis r12,0x432D
+stw r12,0x28(r2)
+lfs f1,0x28(r2)
+
+bl GetHeight4
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,0
+bne skip_a_skipa
+lwz r12,-0x308(r2)
+cmpwi r12,2
+bne skip_a_skipa
+addi r4,r2,0x160
+b skip_a_skipb
+skip_a_skipa:
+addi r4,r2,0x166
+skip_a_skipb:
+addi r3,r2,0x348
+lwz r12,-0x4A0(r2)
+
+cmpwi r12,0
+beq skip_a_skip
+lis r12,0x00A7
+addi r12,r12,0x0043
+stw r12,0x166(r2)
+skip_a_skip:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# guard attack menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x28(r2)
+
+bl GetHeight4
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,1
+bne skip_a_skipaa
+lwz r12,-0x308(r2)
+cmpwi r12,2
+bne skip_a_skipaa
+addi r4,r2,0x1A0
+b skip_a_skipba
+skip_a_skipaa:
+addi r4,r2,0x1A6
+skip_a_skipba:
+addi r3,r2,0x348
+lwz r12,-0x4A4(r2)
+
+cmpwi r12,0
+beq skip_a_skipaaa
+lis r12,0x00A7
+addi r12,r12,0x0043
+stw r12,0x1A6(r2)
+skip_a_skipaaa:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# auto sword menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x28(r2)
+
+bl GetHeight4
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,2
+bne skip_a_skipaa1
+lwz r12,-0x308(r2)
+cmpwi r12,2
+bne skip_a_skipaa1
+addi r4,r2,0x1D0
+b skip_a_skipba1
+skip_a_skipaa1:
+addi r4,r2,0x1D6
+skip_a_skipba1:
+addi r3,r2,0x348
+lwz r12,-0x4A8(r2)
+
+cmpwi r12,0
+beq skip_a_skipaaa1
+lis r12,0x00A7
+addi r12,r12,0x0043
+stw r12,0x1D6(r2)
+skip_a_skipaaa1:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# auto aim menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x28(r2)
+
+bl GetHeight4
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,3
+bne skip_a_skipaa11
+lwz r12,-0x308(r2)
+cmpwi r12,2
+bne skip_a_skipaa11
+addi r4,r2,0x230
+b skip_a_skipba11
+skip_a_skipaa11:
+addi r4,r2,0x236
+skip_a_skipba11:
+addi r3,r2,0x348
+lwz r12,-0x4AC(r2)
+
+cmpwi r12,0
+beq skip_a_skipaaa11
+lis r12,0x00A7
+addi r12,r12,0x0043
+stw r12,0x236(r2)
+skip_a_skipaaa11:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# auto bow menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x28(r2)
+
+bl GetHeight4
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,4
+bne skip_a_skipaa112
+lwz r12,-0x308(r2)
+cmpwi r12,2
+bne skip_a_skipaa112
+addi r4,r2,0x280
+b skip_a_skipba112
+skip_a_skipaa112:
+addi r4,r2,0x286
+skip_a_skipba112:
+addi r3,r2,0x348
+lwz r12,-0x4B0(r2)
+
+cmpwi r12,0
+beq skip_a_skipaaa112
+lis r12,0x00A7
+addi r12,r12,0x0043
+stw r12,0x286(r2)
+skip_a_skipaaa112:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# kill aura menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x28(r2)
+
+bl GetHeight4
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,5
+bne skip_a_skipaa1z
+lwz r12,-0x308(r2)
+cmpwi r12,2
+bne skip_a_skipaa1z
+addi r4,r2,0x2A0
+b skip_a_skipba1z
+skip_a_skipaa1z:
+addi r4,r2,0x2A6
+skip_a_skipba1z:
+addi r3,r2,0x348
+lwz r12,-0x4B4(r2)
+
+cmpwi r12,0
+beq skip_a_skipaaa1z
+lis r12,0x00A7
+addi r12,r12,0x0043
+stw r12,0x2A6(r2)
+skip_a_skipaaa1z:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# tp aura menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x28(r2)
+
+bl GetHeight4
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,6
+bne skip_a_skipaa1z2
+lwz r12,-0x308(r2)
+cmpwi r12,2
+bne skip_a_skipaa1z2
+addi r4,r2,0x2C0
+b skip_a_skipba1z2
+skip_a_skipaa1z2:
+addi r4,r2,0x2C6
+skip_a_skipba1z2:
+addi r3,r2,0x348
+lwz r12,-0x4B8(r2)
+
+cmpwi r12,0
+beq skip_a_skipaaa1z2
+lis r12,0x00A7
+addi r12,r12,0x0043
+stw r12,0x2C6(r2)
+skip_a_skipaaa1z2:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# multi bow menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x28(r2)
+
+bl GetHeight4
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,7
+bne skip_a_skipaa1z21
+lwz r12,-0x308(r2)
+cmpwi r12,2
+bne skip_a_skipaa1z21
+addi r4,r2,0x2E0
+b skip_a_skipba1z21
+skip_a_skipaa1z21:
+addi r4,r2,0x2E6
+skip_a_skipba1z21:
+addi r3,r2,0x348
+lwz r12,-0x4BC(r2)
+
+cmpwi r12,0
+beq skip_a_skipaaa1z21
+lis r12,0x00A7
+addi r12,r12,0x0043
+stw r12,0x2E6(r2)
+skip_a_skipaaa1z21:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# no slowdown menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x28(r2)
+
+bl GetHeight4
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x300(r2)
+cmpwi r12,8
+bne skip_a_skipaa1z21a
+lwz r12,-0x308(r2)
+cmpwi r12,2
+bne skip_a_skipaa1z21a
+addi r4,r2,0x370
+b skip_a_skipba1z21a
+skip_a_skipaa1z21a:
+addi r4,r2,0x376
+skip_a_skipba1z21a:
+addi r3,r2,0x348
+lwz r12,-0x4C0(r2)
+
+cmpwi r12,0
+beq skip_a_skipaaa1z21a
+lis r12,0x00A7
+addi r12,r12,0x0043
+stw r12,0x376(r2)
+skip_a_skipaaa1z21a:
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+b END
+
+GiveCommandMenu:
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq SKIP_POINTER1g
+
+lis r11,0x100
+stw r11,0x814(r12)
+lwz r11,-0x200(r2)
+stw r11,0x148(r12)
+lwz r11,-0x204(r2)
+stw r11,0x14C(r12)
+
+SKIP_POINTER1g:
+
+li r12,0
+stw r12,-0x3B0(r2)
+
+lis r12,0x108D
+lis r9,0xC5A0
+stw r9,-0x4AFC(r12)
+
+lis r12,0x102F
+lwz r10,-0x59D(r12)
+cmpwi r10,0x80
+beq ClickSlotg
+andi. r10,r20,0x100
+cmpwi r10,0x100
+beq DownSlotg
+andi. r10,r20,0x200
+cmpwi r10,0x200
+beq UpSlotg
+andi. r10,r20,0x800
+cmpwi r10,0x800
+beq LeftSlotg
+andi. r10,r20,0x400
+cmpwi r10,0x400
+beq RightSlotg
+bl Reset_Slotg
+b SKIPsg
+
+ClickSlotg:
+lwz r12,-0x314(r2)
+cmpwi r12,1
+beq SKIPsg
+lwz r12,-0x310(r2)
+cmpwi r12,4
+bne SKIPsg
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq nonnon
+
+lis r10,0x3000
+lwz r12,0x1030(r2)
+stw r12,-0x10(r10)
+lwz r12,0x1034(r2)
+stw r12,-0x8(r10)
+lwz r12,0x1038(r2)
+stw r12,-0xC(r10)
+lwz r12,0x103C(r2)
+mulli r12,r12,8
+stw r12,-0x4(r10)
+
+stwu r1,-120(r1)
+mflr r0
+lis r10,4252
+lis r9,12287
+stw r0,124(r1)
+ori r10,r10,55524
+lis r8,12287
+ori r9,r9,65532
+lwz r6,0(r10)
+ori r8,r8,65520
+lwz r7,0(r9)
+lis r10,12287
+lwz r6,52(r6)
+lis r9,12287
+stw r30,112(r1)
+ori r10,r10,65524
+lwz r6,248(r6)
+ori r9,r9,65528
+lwz r30,0(r8)
+lwz r8,200(r6)
+stw r31,116(r1)
+li r31,0
+stw r27,100(r1)
+stw r28,104(r1)
+lwz r27,0(r9)
+lwz r28,0(r10)
+stw r29,108(r1)
+lwzx r29,r8,r7
+stw r31,80(r1)
+stw r31,84(r1)
+bl _0x88
+.long 0x670069
+.long 0x760065
+.long 0x0
+_0x88:
+mflr r4
+lis r9,523
+addi r3,r1,8
+ori r9,r9,2260
+mtctr r9
+bctrl
+lis r9,582
+ori r9,r9,3668
+lwz r4,8(r1)
+mtctr r9
+lwz r9,16(r1)
+lwz r3,12(r1)
+mr r7,r27
+lwz r12,20(r1)
+mr r6,r28
+lwz r0,24(r1)
+mr r5,r30
+lwz r11,28(r1)
+addi r8,r1,40
+lwz r10,32(r1)
+stw r9,48(r1)
+lwz r9,36(r1)
+stw r4,40(r1)
+addi r4,r1,72
+stw r3,44(r1)
+addi r3,r1,80
+stw r9,68(r1)
+stw r29,72(r1)
+stw r31,76(r1)
+stw r12,52(r1)
+stw r0,56(r1)
+stw r11,60(r1)
+stw r10,64(r1)
+bctrl
+lwz r9,64(r1)
+cmplwi r9,7
+ble _0x130
+lis r9,898
+lwz r3,60(r1)
+ori r9,r9,43956
+mtctr r9
+bctrl
+_0x130:
+lwz r9,32(r1)
+cmplwi r9,7
+ble _0x150
+lis r9,898
+lwz r3,28(r1)
+ori r9,r9,43956
+mtctr r9
+bctrl
+_0x150:
+lis r10,4252
+lis r9,0x304
+ori r10,r10,55524
+ori r9,r9,0xA5D8
+lwz r10,0(r10)
+mtctr r9
+lwz r6,80(r1)
+addi r4,r1,88
+lwz r9,52(r10)
+lwz r7,84(r1)
+lwz r3,2168(r9)
+stw r6,88(r1)
+stw r7,92(r1)
+bctrl
+lwz r0,124(r1)
+lwz r27,100(r1)
+lwz r28,104(r1)
+mtlr r0
+lwz r29,108(r1)
+lwz r30,112(r1)
+lwz r31,116(r1)
+addi r1,r1,120
+
+nonnon:
+li r12,1
+stw r12,-0x314(r2)
+b SKIPsg
+
+DownSlotg:
+lwz r12,-0x314(r2)
+cmpwi r12,1
+beq SKIPsg
+lwz r12,-0x310(r2)
+cmpwi r12,0x4
+beq super_upg
+addi r12,r12,1
+stw r12,-0x310(r2)
+SKIPzzg:
+li r12,1
+stw r12,-0x314(r2)
+b SKIPsg
+super_upg:
+li r12,0
+stw r12,-0x310(r2)
+b SKIPzzg
+
+UpSlotg:
+lwz r12,-0x314(r2)
+cmpwi r12,1
+beq SKIPsg
+lwz r12,-0x310(r2)
+cmpwi r12,0
+beq super_downg
+addi r12,r12,-1
+stw r12,-0x310(r2)
+SKIPzg:
+li r12,1
+stw r12,-0x314(r2)
+b SKIPsg
+super_downg:
+li r12,0x4
+stw r12,-0x310(r2)
+b SKIPzg
+
+LeftSlotg:
+lwz r12,0x38(r2)
+addi r12,r12,1
+stw r12,0x38(r2)
+cmpwi r12,0x4A
+bge okka
+cmpwi r12,1
+beq okka
+cmpwi r12,0x10
+beq okka
+cmpwi r12,0x20
+beq okka
+cmpwi r12,0x2A
+beq okka
+cmpwi r12,0x30
+beq okka
+cmpwi r12,0x3A
+beq okka
+cmpwi r12,0x40
+beq okka
+cmpwi r12,0x45
+beq okka
+b SKIPsg
+okka:
+lwz r9,-0x310(r2)
+mulli r9,r9,4
+addi r9,r9,0x1030
+lwzx r12,r9,r2
+cmpwi r9,0x1030
+bne ipipi
+cmpwi r12,2
+bge ipipi
+li r10,2268
+stwx r10,r9,r2
+ipipi:
+cmpwi r9,0x1038
+bne ipip
+cmpwi r12,2
+bge ipip
+li r10,65
+stwx r10,r9,r2
+ipip:
+cmpwi r9,0x103C
+bne ipips
+cmpwi r12,1
+bge ipips
+li r10,1
+stwx r10,r9,r2
+ipips:
+lwzx r12,r9,r2
+addi r12,r12,-1
+stwx r12,r9,r2
+b SKIPsg
+
+RightSlotg:
+lwz r12,0x38(r2)
+addi r12,r12,1
+stw r12,0x38(r2)
+cmpwi r12,0x4A
+bge okk
+cmpwi r12,1
+beq okk
+cmpwi r12,0x10
+beq okk
+cmpwi r12,0x20
+beq okk
+cmpwi r12,0x2A
+beq okk
+cmpwi r12,0x30
+beq okk
+cmpwi r12,0x3A
+beq okk
+cmpwi r12,0x40
+beq okk
+cmpwi r12,0x45
+beq okk
+b SKIPsg
+okk:
+lwz r9,-0x310(r2)
+mulli r9,r9,4
+addi r9,r9,0x1030
+lwzx r12,r9,r2
+
+cmpwi r9,0x1030
+bne ipipic
+cmpwi r12,2266
+ble ipipic
+li r10,0
+stwx r10,r9,r2
+ipipic:
+
+cmpwi r9,0x1038
+bne ipipc
+cmpwi r12,63
+ble ipipc
+li r10,0
+stwx r10,r9,r2
+ipipc:
+
+cmpwi r9,0x103C
+bne ipipcs
+
+lis r11,0x109D
+lwz r11,0x1DDC(r11)
+cmpwi r11,0
+beq ipipcs
+lwz r11,0xF02(r11)
+addi r11,r11,-1
+cmpw r12,r11
+ble ipipcs
+stwx r11,r9,r2
+ipipcs:
+
+lwzx r12,r9,r2
+addi r12,r12,1
+stwx r12,r9,r2
+b SKIPsg
+
+Reset_Slotg:
+li r10,0
+stw r10,-0x314(r2)
+stw r10,0x38(r2)
+blr
+
+SKIPsg:
+
+#----------------------------------------#
+# GiveItemCommand
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+lis r12,0x4000
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lis r12,0x42BA
+stw r12,-0xFC4(r2)
+lfs f1,-0xFC4(r2)
+lis r12,0x4170
+stw r12,-0x104(r2)
+lfs f2,-0x104(r2)
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0x1016
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+#----------------------------------------#
+# id menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lis r12,0x433A
+stw r12,0x10E0(r2)
+lfs f1,0x10E0(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x310(r2)
+cmpwi r12,0
+bne SKIP_Bsaaax
+addi r4,r2,0x1040
+b SKIP_Asaaax
+SKIP_Bsaaax:
+addi r4,r2,0x1042
+SKIP_Asaaax:
+addi r3,r2,0x348
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# damage menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x10E0(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x310(r2)
+cmpwi r12,1
+bne SKIP_Bsaaaxy
+addi r4,r2,0x1070
+b SKIP_Asaaaxy
+SKIP_Bsaaaxy:
+addi r4,r2,0x1072
+SKIP_Asaaaxy:
+addi r3,r2,0x348
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# count menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x10E0(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x310(r2)
+cmpwi r12,2
+bne SKIP_Bv
+addi r4,r2,0x10B0
+b SKIP_Av
+SKIP_Bv:
+addi r4,r2,0x10B2
+SKIP_Av:
+addi r3,r2,0x348
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# player menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x10E0(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x310(r2)
+cmpwi r12,3
+bne SKIP_Bvaz
+addi r4,r2,0x40
+b SKIP_Avaz
+SKIP_Bvaz:
+addi r4,r2,0x42
+SKIP_Avaz:
+addi r3,r2,0x348
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# send button menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lis r12,0x4340
+stw r12,0x10E0(r2)
+lfs f1,0x10E0(r2)
+lis r12,0x42DA
+stw r12,0x10E0(r2)
+lfs f2,0x10E0(r2)
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,-0x310(r2)
+cmpwi r12,4
+bne SKIP_Bva
+addi r4,r2,0x10F0
+b SKIP_Ava
+SKIP_Bva:
+addi r4,r2,0x10F2
+SKIP_Ava:
+addi r3,r2,0x348
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+
+b END
+
+EnchantCommandMenu:
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq ench_skip1
+
+lis r11,0x100
+stw r11,0x814(r12)
+lwz r11,-0x200(r2)
+stw r11,0x148(r12)
+lwz r11,-0x204(r2)
+stw r11,0x14C(r12)
+
+ench_skip1:
+
+li r12,0
+stw r12,-0x3B4(r2)
+
+lis r12,0x108D
+lis r9,0xC5A0
+stw r9,-0x4AFC(r12)
+
+lis r12,0x102F
+lwz r10,-0x59D(r12)
+cmpwi r10,0x80
+beq ClickSlote
+andi. r10,r20,0x100
+cmpwi r10,0x100
+beq DownSlote
+andi. r10,r20,0x200
+cmpwi r10,0x200
+beq UpSlote
+andi. r10,r20,0x800
+cmpwi r10,0x800
+beq LeftSlote
+andi. r10,r20,0x400
+cmpwi r10,0x400
+beq RightSlote
+bl Reset_Slote
+b SKIPsge
+
+ClickSlote:
+lwz r12,0x1114(r2)
+cmpwi r12,1
+beq SKIPsge
+lwz r12,0x1110(r2)
+cmpwi r12,3
+bne SKIPsge
+lwz r12,0x34(r25)
+cmpwi r12,0
+beq nonnone
+
+lis r10,0x3000
+lwz r12,0x1100(r2)
+stw r12,-0x20(r10)
+lwz r12,0x1104(r2)
+stw r12,-0x1C(r10)
+lwz r12,0x103C(r2)
+mulli r12,r12,8
+stw r12,-0x18(r10)
+
+stwu r1,-48(r1)
+mflr r0
+lis r7,12287
+lis r8,12287
+stw r0,52(r1)
+lis r10,12287
+li r9,0
+ori r7,r7,65504
+ori r8,r8,65508
+ori r10,r10,65512
+lwz r6,0(r8)
+addi r4,r1,24
+lwz r8,0(r10)
+lis r10,559
+stw r31,44(r1)
+lis r31,4252
+lwz r5,0(r7)
+ori r31,r31,55524
+stw r9,12(r1)
+ori r10,r10,5400
+mtctr r10
+addi r3,r1,8
+lwz r10,0(r31)
+stw r9,8(r1)
+lwz r10,52(r10)
+lwz r10,248(r10)
+lwz r10,200(r10)
+lwzx r10,r10,r8
+stw r9,28(r1)
+stw r10,24(r1)
+bctrl
+lwz r8,0(r31)
+lwz r10,8(r1)
+lis r9,0x304
+ori r9,r9,0xA5D8
+lwz r8,52(r8)
+lwz r11,12(r1)
+addi r4,r1,32
+lwz r3,2168(r8)
+mtctr r9
+stw r10,32(r1)
+stw r11,36(r1)
+bctrl
+lwz r0,52(r1)
+lwz r31,44(r1)
+mtlr r0
+addi r1,r1,48
+
+nonnone:
+li r12,1
+stw r12,0x1114(r2)
+b SKIPsge
+
+DownSlote:
+lwz r12,0x1114(r2)
+cmpwi r12,1
+beq SKIPsge
+lwz r12,0x1110(r2)
+cmpwi r12,0x3
+beq super_upge
+addi r12,r12,1
+stw r12,0x1110(r2)
+SKIPzzge:
+li r12,1
+stw r12,0x1114(r2)
+b SKIPsge
+super_upge:
+li r12,0
+stw r12,0x1110(r2)
+b SKIPzzge
+
+UpSlote:
+lwz r12,0x1114(r2)
+cmpwi r12,1
+beq SKIPsge
+lwz r12,0x1110(r2)
+cmpwi r12,0
+beq super_downge
+addi r12,r12,-1
+stw r12,0x1110(r2)
+SKIPzge:
+li r12,1
+stw r12,0x1114(r2)
+b SKIPsge
+super_downge:
+li r12,0x3
+stw r12,0x1110(r2)
+b SKIPzge
+
+LeftSlote:
+lwz r12,0x38(r2)
+addi r12,r12,1
+stw r12,0x38(r2)
+cmpwi r12,0x4A
+bge okkae
+cmpwi r12,1
+beq okkae
+cmpwi r12,0x10
+beq okkae
+cmpwi r12,0x20
+beq okkae
+cmpwi r12,0x2A
+beq okkae
+cmpwi r12,0x30
+beq okkae
+cmpwi r12,0x3A
+beq okkae
+cmpwi r12,0x40
+beq okkae
+cmpwi r12,0x45
+beq okkae
+b SKIPsge
+okkae:
+lwz r9,0x1110(r2)
+mulli r9,r9,4
+addi r9,r9,0x1100
+lwzx r12,r9,r2
+cmpwi r9,0x1100
+bne ipipi6
+cmpwi r12,1
+bge ipipi6
+li r10,33
+stwx r10,r9,r2
+ipipi6:
+cmpwi r9,0x1104
+bne ipips7
+cmpwi r12,1
+bge ipips7
+li r10,1
+stwx r10,r9,r2
+ipips7:
+cmpwi r9,0x1108
+bne ipips6
+li r9,0x103C
+cmpwi r12,1
+bge ipips6
+li r10,1
+stwx r10,r9,r2
+ipips6:
+lwzx r12,r9,r2
+addi r12,r12,-1
+stwx r12,r9,r2
+b SKIPsge
+
+RightSlote:
+lwz r12,0x38(r2)
+addi r12,r12,1
+stw r12,0x38(r2)
+cmpwi r12,0x4A
+bge okks
+cmpwi r12,1
+beq okks
+cmpwi r12,0x10
+beq okks
+cmpwi r12,0x20
+beq okks
+cmpwi r12,0x2A
+beq okks
+cmpwi r12,0x30
+beq okks
+cmpwi r12,0x3A
+beq okks
+cmpwi r12,0x40
+beq okks
+cmpwi r12,0x45
+beq okks
+b SKIPsge
+okks:
+lwz r9,0x1110(r2)
+mulli r9,r9,4
+addi r9,r9,0x1100
+lwzx r12,r9,r2
+cmpwi r9,0x1100
+bne ipipice
+cmpwi r12,31
+ble ipipice
+li r10,-1
+stwx r10,r9,r2
+ipipice:
+cmpwi r9,0x1104
+bne ipipice1
+cmpwi r12,9
+ble ipipice1
+li r10,9
+stwx r10,r9,r2
+ipipice1:
+cmpwi r9,0x1108
+bne ipipcse
+li r9,0x103C
+lis r11,0x109D
+lwz r11,0x1DDC(r11)
+cmpwi r11,0
+beq ipipcse
+lwz r11,0xF02(r11)
+addi r11,r11,-1
+cmpw r12,r11
+ble ipipcse
+stwx r11,r9,r2
+ipipcse:
+lwzx r12,r9,r2
+addi r12,r12,1
+stwx r12,r9,r2
+b SKIPsge
+
+Reset_Slote:
+li r10,0
+stw r10,0x1114(r2)
+stw r10,0x38(r2)
+blr
+
+SKIPsge:
+
+#----------------------------------------#
+# EnchantItemCommand
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+lis r12,0x4000
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctrl
+# scalef(float, float, float)
+
+lis r12,0x42AA
+stw r12,-0xFC4(r2)
+lfs f1,-0xFC4(r2)
+lis r12,0x4170
+stw r12,-0x104(r2)
+lfs f2,-0x104(r2)
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0x66
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+#----------------------------------------#
+# id menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lis r12,0x433A
+stw r12,0x10E0(r2)
+lfs f1,0x10E0(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,0x1110(r2)
+cmpwi r12,0
+bne SKIP_Bsaaax6
+addi r4,r2,0x1120
+b SKIP_Asaaax6
+SKIP_Bsaaax6:
+addi r4,r2,0x1122
+SKIP_Asaaax6:
+addi r3,r2,0x348
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# level menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x10E0(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,0x1110(r2)
+cmpwi r12,1
+bne SKIP_Bv6
+addi r4,r2,0x90
+b SKIP_Av6
+SKIP_Bv6:
+addi r4,r2,0x92
+SKIP_Av6:
+addi r3,r2,0x348
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# player menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lfs f1,0x10E0(r2)
+
+bl GetHeight2
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,0x1110(r2)
+cmpwi r12,2
+bne SKIP_Bvaz5
+addi r4,r2,0x40
+b SKIP_Avaz5
+SKIP_Bvaz5:
+addi r4,r2,0x42
+SKIP_Avaz5:
+addi r3,r2,0x348
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+# send button menu
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl medium_scale
+
+lis r12,0x4340
+stw r12,0x10E0(r2)
+lfs f1,0x10E0(r2)
+lis r12,0x42D0
+stw r12,0x10E0(r2)
+lfs f2,0x10E0(r2)
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+# POINTER
+lwz r12,0x1110(r2)
+cmpwi r12,3
+bne SKIP_Bva5
+addi r4,r2,0x10F0
+b SKIP_Ava5
+SKIP_Bva5:
+addi r4,r2,0x10F2
+SKIP_Ava5:
+addi r3,r2,0x348
+
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+
+#----------------------------------------#
+
+b END
+
+Pause:
+#----------------------------------------#
+# ip
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lis r12,0x4126
+stw r12,0x424(r2)
+lfs f1,0x424(r2)
+
+lis r12,0x4382
+stw r12,-0x150(r2)
+lfs f2,-0x150(r2)
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xB80
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+#----------------------------------------#
+# version
+
+mtctr r22
+bctrl
+# pushMatrix(void)
+
+bl small_scale
+
+lis r12,0x4126
+stw r12,0x424(r2)
+lfs f1,0x424(r2)
+
+lis r12,0x4378
+stw r12,-0x150(r2)
+lfs f2,-0x150(r2)
+
+mtctr r29
+bctrl
+# translatef(float, float, float)
+
+addi r4,r2,0xB50
+addi r3,r2,0x348
+mtctr r26
+bctrl
+# std::basic_string<class Z1 = wchar_t, class Z2 = std::char_traits<class Z1 = wchar_t>, class Z3 = std::allocator<class Z1 = wchar_t> >::allocator<class Z1 = wchar_t> >(Z1 const *)
+
+bl default_drawfont
+
+mtctr r28
+bctrl
+# popMatrix(void)
+b END
+
+RESET:
+li r9,0
+stw r9,0xA64(r2)
+b return
+
+small_scale:
+lis r12,0x3F60
+b set_scale
+
+medium_scale:
+lis r12,0x3F8A
+b set_scale
+
+big_scale:
+lis r12,0x4000
+set_scale:
+stw r12,0x418(r2)
+lfs f1,0x418(r2)
+lfs f2,0x418(r2)
+mtctr r23
+bctr
+
+default_drawfont:
+mr r3,r21
+addi r4,r2,0x348
+li r5,0x1
+li r6,0x1
+li r7,-1
+mtctr r24
+bctr
+
+GetHeight:
+lfs f0,0x428(r2)
+lfs f2,0x42C(r2)
+fadd f2,f2,f0
+stfs f2,0x428(r2)
+blr
+
+GetHeight1:
+lfs f0,-0x428(r2)
+lfs f2,0x42C(r2)
+fadd f2,f2,f0
+stfs f2,-0x428(r2)
+blr
+
+GetHeight2:
+lfs f0,-0x1B0(r2)
+lfs f2,0x42C(r2)
+fadd f2,f2,f0
+stfs f2,-0x1B0(r2)
+blr
+
+GetHeight3:
+lfs f0,0x102C(r2)
+lfs f2,0x42C(r2)
+fadd f2,f2,f0
+stfs f2,0x102C(r2)
+blr
+
+GetHeight4:
+lfs f0,0x30(r2)
+lfs f2,0x42C(r2)
+fadd f2,f2,f0
+stfs f2,0x30(r2)
+blr
+
+send_packet:
+stw r3,0xE78(r2)
+send_packet1:
+lwz r3,0x34(r25)
+lwz r3,0x878(r3)
+addi r4,r2,0xE78
+lis r12,0x304
+ori r12,r12,0xA5D8
+mtctr r12
+bctr
+
+sound_packet:
+lwz r3,0x34(r25)
+cmpwi r3,0
+beq return
+lis r12,0x3F80
+stw r12,0xAF8(r2)
+lfs f1,0xAF8(r2)
+lfs f2,0xAF8(r2)
+lis r12,0x31E
+ori r12,r12,0xA16C
+mtctr r12
+bctr
+
+SetDrop:
+li r9,0
+stw r9,0xA58(r2)
+blr
+
+END:
+lwz r0,  4(r2)
+lwz r20,-0x48(r2)
+lwz r21,-0x44(r2)
+lwz r22,-0x40(r2)
+lwz r23,-0x3C(r2)
+lwz r24,-0x38(r2)
+lwz r25,-0x34(r2)
+lwz r26,-0x30(r2)
+lwz r27,-0x2C(r2)
+lwz r28,-0x28(r2)
+lwz r29,-0x24(r2)
+lwz r30,-0x20(r2)
+lwz r31,-0x1C(r2)
+lfd f31,0x8(r2)
+mtlr r0
+return:
+blr
