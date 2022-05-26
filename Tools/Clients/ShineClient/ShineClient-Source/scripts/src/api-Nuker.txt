@@ -1,0 +1,86 @@
+lis r2,0x1400
+mflr r12
+stw r12,0(r2)
+lwz r12,-0x4(r2)
+addi r12,r12,0x1
+stw r12,-0x4(r2)
+cmpwi r12,0x1E
+bge RESETi
+cmpwi r12,0x1
+bne ENDi
+li r12, -0x6
+stw r12,0x20(r2)
+X:
+li r12, -0x6
+stw r12,0x24(r2)
+Y:
+li r12, -0x6
+stw r12,0x28(r2)
+Z:
+li r3,0
+li r4,1
+addi r5,r2,0x10
+lwz r11,0x34(r25)
+lwz r12,0x54(r11)
+lwz r9,0x20(r2)
+add r12,r12,r9
+stw r12,0x0(r5)
+lwz r12,0x58(r11)
+lwz r9,0x24(r2)
+add r12,r12,r9
+stw r12,0x4(r5)
+lwz r12,0x5C(r11)
+lwz r9,0x28(r2)
+add r12,r12,r9
+stw r12,0x8(r5)
+lis r6,0x109C
+lwz r6,0x46A0(r6)
+lis r12,0x28A
+ori r12,r12,0xEC5C
+mtctr r12
+bctrl
+bl send_packet
+li r3,0
+li r4,0
+addi r5,r2,0x10
+lis r6,0x109C
+lwz r6,0x46A0(r6)
+lis r12,0x28A
+ori r12,r12,0xEC5C
+mtctr r12
+bctrl
+bl send_packet
+li r3,0
+li r4,2
+addi r5,r2,0x10
+lis r6,0x109C
+lwz r6,0x46A0(r6)
+lis r12,0x28A
+ori r12,r12,0xEC5C
+mtctr r12
+bctrl
+bl send_packet
+lwz r12,0x28(r2)
+addi r12,r12,0x1
+stw r12,0x28(r2)
+cmpwi r12,0x6
+blt Z
+lwz r12,0x24(r2)
+addi r12,r12,0x1
+stw r12,0x24(r2)
+cmpwi r12,0x6
+blt Y
+lwz r12,0x20(r2)
+addi r12,r12,0x1
+stw r12,0x20(r2)
+cmpwi r12,0x6
+blt X
+b ENDi
+RESETi:
+li r9,0
+stw r9,-0x4(r2)
+ENDi:
+lwz r12,0(r2)
+mtlr r12
+lis r2,0x1600
+addi r2,r2,0x5000

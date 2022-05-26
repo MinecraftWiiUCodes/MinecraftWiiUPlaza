@@ -1,0 +1,565 @@
+lis r2,0x1600
+addi r2,r2,0xA00
+mflr r12
+stw r12,0(r2)
+stw r3,4(r2)
+stw r20,8(r2)
+stw r21,0xC(r2)
+stw r22,0x10(r2)
+stw r23,0x14(r2)
+stw r24,0x18(r2)
+stw r25,0x1C(r2)
+stw r26,0x20(r2)
+stw r27,0x24(r2)
+stw r28,0x28(r2)
+stw r29,0x2C(r2)
+stw r30,0x30(r2)
+stw r31,0x34(r2)
+stw r0,0x38(r2)
+
+lis r2,0x1600
+
+lwz r12,0x4C54(r2)
+cmpwi r12,0
+beq END
+
+addi r2,r2,0x1000
+
+li r3,0
+lis r30,545
+ori r30,r30,33472
+mtctr r30
+bctrl
+mtctr r30
+mr r31,r3
+li r3,0
+bctrl
+mr r29,r3
+bl _0x70
+.long 0x640069
+.long 0x730070
+.long 0x6c0061
+.long 0x790000
+
+_0x70:
+mflr r4
+lis r30,523
+addi r3,r2,40
+ori r30,r30,2260
+mtctr r30
+bctrl
+lis r9,545
+ori r9,r9,35456
+lwz r26,40(r2)
+lwz r0,44(r2)
+mtctr r9
+lwz r11,48(r2)
+addi r4,r2,8
+lwz r6,52(r2)
+mr r5,r29
+lwz r7,56(r2)
+mr r3,r31
+lwz r8,60(r2)
+lwz r10,64(r2)
+lwz r9,68(r2)
+stw r26,8(r2)
+stw r0,12(r2)
+stw r11,16(r2)
+stw r6,20(r2)
+stw r7,24(r2)
+stw r8,28(r2)
+stw r10,32(r2)
+stw r9,36(r2)
+bctrl
+bl _0xF4
+.long 0x63006f
+.long 0x6c006f
+.long 0x720000
+
+_0xF4:
+mflr r4
+mtctr r30
+addi r3,r2,40
+bctrl
+lis r9,545
+ori r9,r9,44560
+lwz r11,48(r2)
+lwz r6,52(r2)
+mtctr r9
+lwz r7,56(r2)
+addi r4,r2,8
+lwz r8,60(r2)
+li r5,0
+lwz r10,64(r2)
+mr r3,r29
+lwz r9,68(r2)
+lwz r0,44(r2)
+lwz r30,40(r2)
+stw r11,16(r2)
+stw r6,20(r2)
+stw r7,24(r2)
+stw r8,28(r2)
+stw r10,32(r2)
+stw r9,36(r2)
+stw r0,12(r2)
+stw r30,8(r2)
+lis r30,584
+ori r30,r30,26264
+bctrl
+mtctr r30
+li r3,298
+bctrl
+mtctr r30
+mr r26,r3
+li r3,299
+bctrl
+mtctr r30
+mr r25,r3
+li r3,300
+bctrl
+mtctr r30
+mr r24,r3
+li r3,301
+lis r30,584
+ori r30,r30,25020
+bctrl
+mr r4,r26
+mr r23,r3
+mtctr r30
+li r5,1
+li r3,0
+bctrl
+mr r4,r25
+mtctr r30
+li r5,1
+mr r26,r3
+li r3,0
+bctrl
+mr r4,r24
+mtctr r30
+li r5,1
+mr r25,r3
+li r3,0
+bctrl
+mr r4,r23
+mtctr r30
+li r5,1
+mr r24,r3
+li r3,0
+bctrl
+lis r4,4608
+ori r4,r4,8124
+lis r9,4608
+lwz r8,0(r4)
+lis r6,4608
+lis r7,4608
+lis r10,4608
+cmpwi r8,0
+ori r9,r9,4028
+ori r6,r6,8108
+ori r7,r7,8112
+ori r10,r10,8116
+mr r23,r3
+lwz r30,0(r9)
+lwz r5,0(r6)
+lwz r3,0(r7)
+lwz r11,0(r10)
+bne _0x3F8
+lis r10,4608
+ori r10,r10,8096
+lwz r8,0(r10)
+cmpwi r8,0
+bne _0x430
+lis r8,255
+li r7,1
+ori r8,r8,256
+stw r7,0(r10)
+stw r8,0(r9)
+lis r30,255
+
+_0x280:
+bl _0x290
+.long 0x63006f
+.long 0x6c006f
+.long 0x720000
+
+_0x290:
+mflr r4
+lis r9,523
+addi r3,r2,40
+ori r9,r9,2260
+mtctr r9
+bctrl
+lis r9,545
+ori r9,r9,44560
+lwz r7,40(r2)
+lwz r8,44(r2)
+mtctr r9
+lwz r10,48(r2)
+mr r5,r30
+lwz r9,52(r2)
+addi r4,r2,8
+stw r7,8(r2)
+mr r3,r29
+lwz r7,56(r2)
+lis r30,584
+stw r8,12(r2)
+ori r30,r30,57472
+lwz r8,60(r2)
+stw r10,16(r2)
+stw r9,20(r2)
+lwz r10,64(r2)
+lwz r9,68(r2)
+stw r10,32(r2)
+stw r9,36(r2)
+stw r7,24(r2)
+stw r8,28(r2)
+bctrl
+mr r4,r31
+mtctr r30
+mr r3,r26
+bctrl
+mr r4,r31
+mtctr r30
+mr r3,r25
+bctrl
+mr r4,r31
+mtctr r30
+mr r3,r24
+bctrl
+mr r4,r31
+mtctr r30
+mr r3,r23
+lis r31,8192
+ori r31,r31,160
+bctrl
+lwz r10,0(r31)
+lis r9,4252
+cmplwi r10,1
+ori r9,r9,55524
+lwz r30,0(r9)
+beq _0x480
+cmpwi r10,0
+bne _0x3A8
+lis r9,790
+mr r3,r30
+ori r9,r9,28164
+mtctr r9
+bctrl
+lis r9,8192
+addic r27,r4,5
+ori r9,r9,144
+addze r28,r3
+li r10,1
+stw r28,0(r9)
+stw r27,4(r9)
+stw r10,0(r31)
+
+_0x3A8:
+lis r9,790
+mr r3,r30
+ori r9,r9,28164
+mtctr r9
+bctrl
+cmplw r28,r3
+ble _0x4AC
+
+_0x3C4:
+b END
+
+_0x3F8:
+cmpwi r8,1
+bne _0x44C
+lis r10,4608
+ori r10,r10,8100
+lwz r7,0(r10)
+cmpwi r7,0
+beq _0x674
+li r10,0
+ori r10,r10,65279
+cmpw r30,r10
+bgt _0x6C8
+li r9,2
+stw r9,0(r4)
+b _0x280
+
+_0x430:
+lis r10,255
+ori r10,r10,65280
+cmpw r30,r10
+bgt _0x690
+addi r10,r30,256
+stw r10,0(r9)
+b _0x280
+
+_0x44C:
+cmpwi r8,2
+bne _0x630
+lis r10,4608
+ori r10,r10,8104
+lwz r8,0(r10)
+cmpwi r8,0
+beq _0x654
+lis r10,1
+cmpw r30,r10
+bge _0x6BC
+addi r10,r30,1
+stw r10,0(r9)
+b _0x280
+
+_0x480:
+lis r9,8192
+mr r3,r30
+ori r9,r9,144
+lwz r28,0(r9)
+lwz r27,4(r9)
+lis r9,790
+ori r9,r9,28164
+mtctr r9
+bctrl
+cmplw r28,r3
+bgt _0x3C4
+
+_0x4AC:
+bne _0x4B8
+cmplw r27,r4
+bgt _0x3C4
+
+_0x4B8:
+lis r8,8192
+lis r10,8192
+lis r9,8192
+lis r31,651
+li r29,0
+ori r8,r8,160
+ori r10,r10,144
+ori r31,r31,2552
+ori r9,r9,148
+stw r29,0(r8)
+mtctr r31
+stw r29,0(r10)
+addi r5,r2,72
+stw r29,0(r9)
+li r4,5
+stw r29,76(r2)
+stw r26,72(r2)
+li r3,0
+lis r30,4252
+ori r30,r30,55524
+bctrl
+stw r29,76(r2)
+mr r9,r3
+stw r25,72(r2)
+mtctr r31
+addi r5,r2,72
+li r4,6
+li r3,0
+mr r25,r9
+bctrl
+stw r29,76(r2)
+stw r24,72(r2)
+mr r26,r3
+mtctr r31
+addi r5,r2,72
+li r4,7
+li r3,0
+bctrl
+addi r5,r2,72
+stw r29,76(r2)
+mr r27,r3
+stw r23,72(r2)
+mtctr r31
+li r4,8
+li r3,0
+lis r31,772
+ori r31,r31,42456
+bctrl
+lwz r9,0(r30)
+mtctr r31
+addi r4,r2,80
+lwz r9,52(r9)
+mr r28,r3
+lwz r3,2168(r9)
+stw r25,80(r2)
+stw r29,84(r2)
+bctrl
+lwz r9,0(r30)
+mtctr r31
+addi r4,r2,80
+lwz r9,52(r9)
+lwz r3,2168(r9)
+stw r26,80(r2)
+stw r29,84(r2)
+bctrl
+lwz r9,0(r30)
+mtctr r31
+addi r4,r2,80
+lwz r9,52(r9)
+lwz r3,2168(r9)
+stw r27,80(r2)
+stw r29,84(r2)
+bctrl
+lwz r9,0(r30)
+addi r4,r2,80
+mtctr r31
+lwz r9,52(r9)
+lwz r3,2168(r9)
+stw r28,80(r2)
+stw r29,84(r2)
+bctrl
+b END
+
+_0x630:
+cmpwi r8,3
+bne _0x6E0
+cmpwi r5,0
+beq _0x69C
+cmpwi r30,254
+bgt _0x6D4
+li r9,4
+stw r9,0(r4)
+b _0x280
+
+_0x654:
+li r8,0
+li r7,1
+ori r8,r8,65281
+li r30,0
+stw r7,0(r10)
+ori r30,r30,65280
+stw r8,0(r9)
+b _0x280
+
+_0x674:
+lis r7,254
+lis r30,255
+ori r7,r7,65280
+stw r8,0(r10)
+ori r30,r30,65280
+stw r7,0(r9)
+b _0x280
+
+_0x690:
+li r9,1
+stw r9,0(r4)
+b _0x280
+
+_0x69C:
+li r10,0
+li r8,1
+ori r10,r10,65279
+li r30,0
+stw r8,0(r6)
+ori r30,r30,65535
+stw r10,0(r9)
+b _0x280
+
+_0x6BC:
+li r9,3
+stw r9,0(r4)
+b _0x280
+
+_0x6C8:
+addis r10,r30,-1
+stw r10,0(r9)
+b _0x280
+
+_0x6D4:
+addi r10,r30,-256
+stw r10,0(r9)
+b _0x280
+
+_0x6E0:
+cmpwi r8,4
+bne _0x734
+cmpwi r3,0
+beq _0x70C
+lis r10,255
+ori r10,r10,255
+cmpw r30,r10
+ble _0x728
+li r9,5
+stw r9,0(r4)
+b _0x280
+
+_0x70C:
+lis r10,1
+li r8,1
+ori r10,r10,255
+stw r8,0(r7)
+li r30,255
+stw r10,0(r9)
+b _0x280
+_0x728:
+addis r10,r30,1
+stw r10,0(r9)
+b _0x280
+
+_0x734:
+cmpwi r8,5
+bne _0x764
+cmpwi r11,0
+beq _0x7A8
+lis r9,255
+cmpw r30,r9
+blt _0x7C4
+addi r10,r30,-1
+
+_0x754:
+lis r9,4608
+ori r9,r9,4028
+stw r10,0(r9)
+b _0x280
+
+_0x764:
+cmpwi r8,6
+bne _0x280
+lis r8,4608
+li r9,0
+ori r8,r8,8096
+lis r5,4608
+stw r9,0(r8)
+lis r8,4608
+ori r5,r5,8100
+ori r8,r8,8104
+stw r9,0(r4)
+stw r9,0(r6)
+stw r9,0(r7)
+stw r9,0(r10)
+stw r9,0(r5)
+stw r9,0(r8)
+b _0x280
+
+_0x7A8:
+li r8,1
+lis r9,255
+lis r30,255
+stw r8,0(r10)
+ori r30,r30,255
+ori r10,r9,254
+b _0x754
+
+_0x7C4:
+li r9,6
+stw r9,0(r4)
+b _0x280
+
+END:
+lis r2,0x1600
+addi r2,r2,0xA00
+lwz r12,0(r2)
+mtlr r12
+lwz r3,4(r2)
+lwz r20,8(r2)
+lwz r21,0xC(r2)
+lwz r22,0x10(r2)
+lwz r23,0x14(r2)
+lwz r24,0x18(r2)
+lwz r25,0x1C(r2)
+lwz r26,0x20(r2)
+lwz r27,0x24(r2)
+lwz r28,0x28(r2)
+lwz r29,0x2C(r2)
+lwz r30,0x30(r2)
+lwz r31,0x34(r2)
+lwz r0,0x38(r2)

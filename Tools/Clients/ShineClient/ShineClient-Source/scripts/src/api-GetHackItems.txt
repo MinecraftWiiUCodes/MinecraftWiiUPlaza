@@ -1,0 +1,300 @@
+lis r2,0x1400
+addi r2,r2,0x2000
+mflr r12
+stw r12,0(r2)
+stw r3,4(r2)
+
+lis r12,0x1600
+lwz r12,0x4C60(r12)
+cmpwi r12,0
+beq END
+
+lis r12,0x109D
+lwz r12,-0x271C(r12)
+lwz r12,0x34(r12)
+cmpwi r12,0x0
+beq END
+
+li r3,0xA6
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0x0
+li r5,0x40
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+li r3,0x0
+li r4,0x24
+addi r5,r2,0x8
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x34(r3)
+lwz r3,0x878(r3)
+addi r4,r2,0x8
+lis r12,0x304
+ori r12,r12,0xA5D8
+mtctr r12
+bctrl
+
+li r3,0xb
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0x0
+li r5,0x40
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+li r3,0x0
+li r4,0x25
+addi r5,r2,0x8
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x34(r3)
+lwz r3,0x878(r3)
+addi r4,r2,0x8
+lis r12,0x304
+ori r12,r12,0xA5D8
+mtctr r12
+bctrl
+
+li r3,0x3e
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0x0
+li r5,0x40
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+li r3,0x0
+li r4,0x26
+addi r5,r2,0x8
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x34(r3)
+lwz r3,0x878(r3)
+addi r4,r2,0x8
+lis r12,0x304
+ori r12,r12,0xA5D8
+mtctr r12
+bctrl
+
+li r3,0x7c
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0x0
+li r5,0x40
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+li r3,0x0
+li r4,0x27
+addi r5,r2,0x8
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x34(r3)
+lwz r3,0x878(r3)
+addi r4,r2,0x8
+lis r12,0x304
+ori r12,r12,0xA5D8
+mtctr r12
+bctrl
+
+li r3,0x89
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0x0
+li r5,0x40
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+li r3,0x0
+li r4,0x28
+addi r5,r2,0x8
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x34(r3)
+lwz r3,0x878(r3)
+addi r4,r2,0x8
+lis r12,0x304
+ori r12,r12,0xA5D8
+mtctr r12
+bctrl
+
+li r3,0xd2
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0x0
+li r5,0x40
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+li r3,0x0
+li r4,0x29
+addi r5,r2,0x8
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x34(r3)
+lwz r3,0x878(r3)
+addi r4,r2,0x8
+lis r12,0x304
+ori r12,r12,0xA5D8
+mtctr r12
+bctrl
+
+li r3,0xd3
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0x0
+li r5,0x40
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+li r3,0x0
+li r4,0x2A
+addi r5,r2,0x8
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x34(r3)
+lwz r3,0x878(r3)
+addi r4,r2,0x8
+lis r12,0x304
+ori r12,r12,0xA5D8
+mtctr r12
+bctrl
+
+li r3,0x1A6
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0x0
+li r5,0x40
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+li r3,0x0
+li r4,0x2B
+addi r5,r2,0x8
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x34(r3)
+lwz r3,0x878(r3)
+addi r4,r2,0x8
+lis r12,0x304
+ori r12,r12,0xA5D8
+mtctr r12
+bctrl
+
+li r3,0x1b7
+lis r12,0x248
+ori r12,r12,0x6698
+mtctr r12
+bctrl
+mr r4,r3
+li r3,0x0
+li r5,0x40
+lis r12,0x248
+ori r12,r12,0x61BC
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+li r3,0x0
+li r4,0x2C
+addi r5,r2,0x8
+lis r12,0x28B
+ori r12,r12,0x9F8
+mtctr r12
+bctrl
+stw r3,0x8(r2)
+lis r3,0x109D
+lwz r3,-0x271C(r3)
+lwz r3,0x34(r3)
+lwz r3,0x878(r3)
+addi r4,r2,0x8
+lis r12,0x304
+ori r12,r12,0xA5D8
+mtctr r12
+bctrl
+
+END:
+lwz r12,0(r2)
+lwz r3,4(r2)
+mtlr r12
