@@ -1,0 +1,39 @@
+[ Useful ]
+16004D60(-0x2A0)=instantCraft
+16004D5C(-0x2A4)=3x3Crafting
+16004D58(-0x2A8)=MuteVoiceChat
+16004D54(-0x2AC)=Fly
+16004D50(-0x2B0)=NoFallDamage
+16004D4C(-0x2B4)=NoCrashArrow
+16004D48(-0x2B8)=FastZR
+16004D44(-0x2BC)=FastZL
+16004D40(-0x2C0)=CanBreakBedrock
+16004D3C(-0x2C4)=UPSpeed
+16004D38(-0x2C8)=Scaffold
+16004D34(-0x2CC)=Nuker
+16004D30(-0x2D0)=Builder
+
+[ Items ]
+16004C60(-0x3A0)=GetHackItems
+16004C5C(-0x3A4)=GetHackItems2
+16004C58(-0x3A8)=ModMenu
+16004C54(-0x3AC)=RainbowArmor
+
+[ Command ]
+16004C50(-0x3B0)=GiveItem
+16004C4C(-0x3B4)=EnchantItem
+16004C48(-0x3B8)=Toggledownfall
+16004C44(-0x3BC)=KillMe
+16004C40(-0x3C0)=SetSpawnpoint
+16004C3C(-0x3C4)=SetTime
+
+[ PvP ]
+16004B60(-0x4A0)=RiptideAttack
+16004B5C(-0x4A4)=GuardAttack
+16004B58(-0x4A8)=AutoSword
+16004B54(-0x4AC)=AutoAim
+16004B50(-0x4B0)=AutoBow
+16004B4C(-0x4B4)=KillAura
+16004B48(-0x4B8)=TPAura
+16004B44(-0x4BC)=MultiBow
+16004B40(-0x4C0)=Noslowdown
