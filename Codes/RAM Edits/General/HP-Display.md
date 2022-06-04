@@ -1,4 +1,4 @@
-# Anti-Kick
+# Entity Health Display
 > by: ??? (possibly Clover)
 
 Display's entity health in the nametag, shows for players and villagers.
