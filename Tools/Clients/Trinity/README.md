@@ -21,7 +21,7 @@ The RPX then requests the following URLs:
 > All of these requests must have these as the only headers: `Accept: */*`, and `Host: 51.91.56.16`  
 > ---------------------------------------------------  
 > http://51.91.56.16/online (content-type is `application/octet-stream`, returns `1\n`)  
-> http://51.91.56.16/version (content-type is `application/octet-stream`, returns `v1.6\n`)  
+> http://51.91.56.16/version (content-type is `application/octet-stream`, returns `v2.3\n`)  
 > http://51.91.56.16/launcher/2vl_logo.png (content-type is `image/png`, Vulcan Logo)  
 > http://51.91.56.16/launcher/2ph_logo.png (content-type is `image/png`, Phantom Logo)  
 > http://51.91.56.16/launcher/2tr_logo.png (content-type is `image/png`, Trinity Logo)  
