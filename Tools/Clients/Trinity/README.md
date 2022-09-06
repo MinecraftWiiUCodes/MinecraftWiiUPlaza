@@ -42,7 +42,7 @@ However, I noticed a request from IP 255.255.255.0, and it's data reads as the f
 GameHackingHelper by NexoCube
 We're started ...
 ```
-This proves that Trinity runs under GameHackingHelper, which when searched on google, leads to this github link: https://github.com/Rambo6Glaz/WiiUGameHacking
+This proves that Trinity runs under GameHackingHelper, which when searched on google, leads to this github link: https://github.com/MinecraftWiiUCodes/WiiUGameHacking
 
 Interestingly, there's one more check while Minecraft is running, so that means the full version of Trinity is downloaded, not just the trial version. It just does a simple request to see if you bought it, and if you haven't, it displays a warning message on the bottom. (I am unaware of the url requested, however it can likely be easily spoofed, the data sent is unclear however)
 
