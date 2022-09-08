@@ -1564,7 +1564,7 @@ static s32 startTCPGeckoThread(s32 argc, void *argv) {
 void startTCPGecko() {
 	// log_print("Starting TCP Gecko...\n");
 	uint64_t titleID = OSGetTitleID();
-	if(titleID == 0x00050000101DBE00){
+	if(titleID == 0x00050000101DBE00 || titleID == 0x00050000101D9D00 || titleID == 0x00050000101D7500) {
 
 	// Start ShineClient
 int value0=0x00000001;
