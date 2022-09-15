@@ -2,5 +2,5 @@
 An all-in-one place for Minecraft: Wii U codes, tools, and documentation to be stored.
 
 # Contributors:
-Korozin - https://github.com/Korozin
+Korozin - https://github.com/Korozin<br/>
 Zyliqx - https://github.com/Zyliqx
