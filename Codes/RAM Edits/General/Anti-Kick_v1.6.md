@@ -3,7 +3,7 @@
 > <br/>
 > Re-Created by : David xF
 
-Prevents you from ever being kicked, patches the ClientPacketListener::handleDisconnect function.
+Prevents you from ever being kicked. It patches the ClientPacketListener::handleDisconnect function.
 As an addition this also allows custom text to show whenever the packet is patched.
 
 Addresses | Values
