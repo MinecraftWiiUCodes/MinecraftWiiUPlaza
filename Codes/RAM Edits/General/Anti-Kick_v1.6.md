@@ -1,5 +1,6 @@
 # Anti-Kick
 > Original found in : PureClient v1.6
+> <br/>
 > Re-Created by : David xF
 
 Prevents you from ever being kicked, patches the ClientPacketListener::handleDisconnect function.
