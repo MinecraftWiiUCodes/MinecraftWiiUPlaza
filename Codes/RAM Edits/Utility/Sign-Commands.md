@@ -48,6 +48,10 @@ x,y,z(int/float)
 block id(int)
 ```
 
+Usage Example:  
+![t](https://github.com/Korozin/MinecraftWiiUPlaza/assets/90534409/6be4e96f-d15b-4eb4-95a3-462315d96a15)
+
+
 JGecko U Code:
 ```
 03F00000 9421FE90
